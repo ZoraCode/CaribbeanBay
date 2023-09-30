@@ -6,17 +6,6 @@
   font-family: "Spoqa Han Sans Neo", "sans-serif";
 }
 
-@font-face {
-  font-family: "Material Icons";
-  font-style: normal;
-  font-weight: 400;
-  src: url(path/to/MaterialIcons-Regular.eot);
-  src: local("Material Icons"), local("MaterialIcons-Regular"),
-    url(path/to/MaterialIcons-Regular.woff2) format("woff2"),
-    url(path/to/MaterialIcons-Regular.woff) format("woff"),
-    url(path/to/MaterialIcons-Regular.ttf) format("truetype");
-}
-
 :root {
   /* gmarket 폰트 제외 body3_tt값과 동일 */
   --Gmaket_Sans: 'Gmarket Sans';
