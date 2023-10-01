@@ -7,12 +7,7 @@
 }
 
 :root {
-  /* gmarket 폰트 제외 body3_tt값과 동일 */
-  --Gmaket_Sans: 'Gmarket Sans';
-  --Score_dream: 'S-Core Dream';
-  --Qwitcher_Grypen: 'Qwitcher Grypen';
   --font_size: 20px;
-  --font_weight: lighter;
   --line_height: 30px;
   
   /* sm_pd 기준 */
