@@ -1,6 +1,48 @@
+/* header */
+
+header{
+  background:var(--white);
+  height: 150px;
+  z-index: 9999;
+  position: relative;
+}
+header .top_menu{
+  position: relative;
+  height: 150px;
+  padding-top: 30px;
+  box-sizing: border-box;
+}
+header .top_menu h1 a{
+  background: url()no-repeat;
+  text-indent: -1000em;
+  display: block;
+  width: 90px;
+  height: 90px;
+}
+header .bottom_menu{
+  width: 100%;
+  background:linear-gradient( #fff 60px,rgba(255,255,255,.9) 60px);
+  transition: 0.3s;  
+  overflow: hidden;
+  height: 60px;
+  position: absolute;
+}
+header .bottom_menu .bottom_list{
+  height: 60px;
+  border-bottom: 1px var(--sub_color1) solid;
+}
+header .bottom_menu.sticky{
+  position: fixed;
+  top:0;
+}
+
+
+
+
 
 .start{
   position: relative;
+  width: 1245px;
 }
 .start_slider_container{
   width:1320px;
@@ -13,11 +55,7 @@
   padding-bottom: 7px;
 }
 .start_slides .sub_field{
-  height: 75px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 10;
+
   position: absolute;
 }
 .start_slides .sub_width{
@@ -49,7 +87,7 @@
   margin-right: 8px;
 }
 .start_slide_wrapper .start_slides > div:hover{
-	flex:2;
+	flex:3;
 }
 .start_controls{
 	position: absolute;
