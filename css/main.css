@@ -38,6 +38,12 @@ header .top_menu .open_search input{
   color: var(--light_g3);
   font-weight: 500;
 }
+
+header .top_menu .icon{
+  gap: 15px;
+}
+
+
 header .bottom_menu{
   width: 100%;
   background:linear-gradient( #fff 60px,rgba(255,255,255,.9) 60px);
@@ -49,6 +55,10 @@ header .bottom_menu{
 header .bottom_menu .bottom_list{
   height: 60px;
   border-bottom: 1px var(--sub_color1) solid;
+}
+header .bottom_menu .menu_list{
+  gap:var(--padding);
+  line-height: 60px;
 }
 header .bottom_menu.sticky{
   position: fixed;
@@ -110,35 +120,51 @@ header .bottom_menu.sticky{
   /* padding: 0 50px;  */
 }
 
+
+.moving{
+  height: calc(var(--padding)*1.5);
+  line-height: calc(var(--padding)*1.5);
+  background-color: var(--sub_color3);
+  color: var(--white);
+}
 /* sec2 */
+
+/* 
+.sec2{
+  width: 1245px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.sec2 .step_list{
+  gap: 15px;
+}
+.sec2 .step_list .step_img{
+  height: 420px;
+  flex: 1;
+} */
+
 
 .sec2{
   position: relative;
   width: 1245px;
+  margin: 0 auto;
+}
+.sec2 .step{
+  padding-bottom: var(--padding);
 }
 .sec2_slider_container{
-  width:1320px;
-	margin-top:50px;
-	height: 500px;
+	margin-top:calc(var(--padding)*2);
+	height: 420px;
   position: relative;
   overflow: hidden;
 }
 .sec2_slideWrap h2{
   padding-bottom: 7px;
 }
-.sec2_slides .sub_field{
-
-  position: absolute;
-}
-.sec2_slides .sub_width{
-  height: 60px;
-  line-height: 60px;
-  text-align: center;
-  top: 0;
-}
 .sec2_slide_wrapper{
   position: absolute;
-  height: 500px;width:100%;
+  height: 420px;
+  width:100%;
 	left:0;
 }
 .sec2_slide_wrapper.animated{
@@ -146,45 +172,38 @@ header .bottom_menu.sticky{
 }
 .sec2_slide_wrapper .sec2_slides{
   display: flex;
-
   position: absolute;
-  height: 500px;
+  height: 420px;
   width:100%;
 }
-.sec2_slide_wrapper .sec2_slides > div{
-	width: 25%;
+.sec2_slide_wrapper .sec2_slides div[class^="coverImg"]{
 	flex:1;
 	transition:0.3s;
   box-sizing: margin-box;
   margin-right: 8px;
 }
 .sec2_slide_wrapper .sec2_slides > div:hover{
-	flex:3;
+	flex:2;
 }
 .sec2_controls{
 	position: absolute;
-	top:150px;
-	right:0;
-	font-size:calc(var(--font_size)*1.2);
-	cursor:pointer;
-}
-.sec2_controls span{
-	margin:0 10px;
+  font-size: 100px;
+  opacity: 0.1;
 }
 .sec2 .coverImg1{
-	background: url(../img/sub2_slide_img1.png) no-repeat center center/cover;
+	background: url(../img/Step1.png) no-repeat center center/cover;
 }
 .sec2 .coverImg2{
-	background: url(../img/sub2_slide_img2.png) no-repeat center center/cover;
+	background: url(../img/Step2.png) no-repeat center center/cover;
 }
 .sec2 .coverImg3{
-	background: url(../img/sub2_slide_img3.png) no-repeat center center/cover;
+	background: url(../img/Step3.png) no-repeat center center/cover;
 }
 .sec2 .coverImg4{
-	background: url(../img/sub2_slide_img4.png) no-repeat center center/cover;
+	background: url(../img/Step4.png) no-repeat center center/cover;
 }
 .sec2 .coverImg5{
-	background: url(../img/sub2_slide_img4.png) no-repeat center center/cover;
+	background: url(../img/Step5.gif) no-repeat center center/cover;
 }
 .sec2 .sec2_slides > div{
   position: relative;
@@ -198,10 +217,11 @@ header .bottom_menu.sticky{
   width: 100%;
   height: 100%;
 }
+
 .sec2 .sec2_slides > div:hover{
 	display: none;
 }
 .sec2 .sec2_slides > div:hover video{
 	display: block;
   object-fit: cover;
-}
+} 

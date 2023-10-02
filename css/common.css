@@ -122,6 +122,12 @@ h1,h2,h3,h4,h5,h6,p,span,textarea,input,label,a{
   width: 1272px;
   margin: 0 auto;
 }
+.nbtn {
+  font-size: 20px;
+  height: 45px;
+  padding: 10px 30px;
+  border-radius: 30px;
+}
 
 /* padding */
 .big_pd {
@@ -131,10 +137,13 @@ h1,h2,h3,h4,h5,h6,p,span,textarea,input,label,a{
   padding-bottom: calc(var(--padding) * 3);
 }
 .sm_pd {
-  padding-bottom: var(--padding);
+  padding-bottom: calc(var(--padding) * 2);
 }
 .cf:after {
   content: "";
   display: block;
   clear: both;
+}
+.hidden{
+  display: none;
 }
