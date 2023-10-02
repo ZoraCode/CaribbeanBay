@@ -9,8 +9,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" /> -->
-  <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" /> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
@@ -25,16 +25,47 @@
 </head>
 
 <body>
-  <header> <!-- header_성진영(시작) -->
-    <div class="top_menu container d-flex">
+  <header>
+    <div class="top_menu container d-flex justify-content-between align-items-center">
      
         <h1 class="center_logo">
           <a href="#">로고</a>
         </h1>
         
-        <textarea name="" id="" cols="30" rows="10">무엇을 찾고 계신가요?</textarea>
+        <!-- Search -->
+				<form id="" name="" action="www.html" method="get" target="" enctype="multipart/form-data" >
+          <input id="banner_action" name="banner_action" value="" type="hidden"/>
+          
+          <div class="">
+          <fieldset>
+            
+          <legend>검색</legend>
+            <div class="">
+              <div class="open_search d-flex position-relative" onclick="">
+                <i class="fa-solid fa-magnifying-glass position-absolute"></i>
+                <input id="keyword" name="keyword" fw-filter="" fw-label="검색어" fw-msg="" placeholder="            무엇을 찾고 계신가요? " onkeyup="SEARCH_HASHTAG.getHashtag($(this)); " autocomplete="off" onmousedown="SEARCH.clickSearchForm(this)" value="" type="text"/>
+              </div>
+            </div>
+          </fieldset>
 
-        <div>icon</div>
+          </div>
+        </form>			
+        <!-- Search -->
+        
+        
+        <ul class="d-flex icon">
+          <li><img src="img/Sun.svg" alt=""></li>
+          <li><img src="img/Button.svg" alt=""></li>
+          <li><img src="img/Night.svg" alt=""></li>
+        </ul>
+
+        <ul class="d-flex icon">
+          <li><img src="img/Login.svg" alt=""></li>
+          <li><img src="img/Menu.svg" alt=""></li>
+          <li><img src="img/Talk.svg" alt=""></li>
+        </ul>
+
+      </div>
     </div>
     
     <nav class="bottom_menu">
@@ -50,7 +81,7 @@
     </nav>
 
 
-    <div class="modal_wrap bg_modal">
+    <!-- <div class="modal_wrap bg_modal">
       <form action="#" method="post" class="bg_white section_pd login_form">
         <div class="cf inner_form">
           <h2 class="sub_tt title_pd font_gray">login</h2>
@@ -92,24 +123,75 @@
 
         <i class="fa-solid fa-x close_btn icon_L"></i>
       </form>
-    </div>
+    </div> -->
+
   </header>
 
 
   <main>
-    <section class="sec1"></section>
+    <section class="sec1">
 
-    <section class="start">
+     <!-- <div class="sec1"> -->
+        <h2 class="hidden">메인 동영상 슬라이드</h2>
+        <div class="swiper sec1_video_slide">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="sec1_fullbg ">
+                <img class="sec1_img" src="img/Main_a.jpg" alt="메인 홍보 이미지">
+                <!-- <img class="position-absolute pologo" src="img/Main_a_mid.png" alt="" > -->
+              </div>
+              <div class="sec1_videodesc t-LGWhite">
+                <h3 class="main-tt">[Beauty] 더 나은, 더 특별한</h3>
+                <p>Global Lifebeauty Innovator</p>
+                <div class="beauty_btn"><a href="#">자세히 보기</a></div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="sec1_fullbg">
+                <video class="sec1_fiji" src="https://res.cloudinary.com/dfdasu5ws/video/upload/v1691065326/home_fiji_qibaet.mp4" preload="auto" muted autoplay loop></video>
+              </div>
+              <div class="sec1_videodesc t-LGWhite">
+                <h3 class="main-tt">[Healthy] 더 나은, 더 특별한</h3>
+                <p>Global Lifestyle Creating Company</p>
+                <div class="beauty_btn"><a href="#">자세히 보기</a></div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="sec1_fullbg">
+                <video src="https://res.cloudinary.com/dfdasu5ws/video/upload/v1690917177/drink_coca_xuiheh.mp4" preload="auto" muted autoplay loop></video>
+              </div>
+              <div class="sec1_videodesc t-LGWhite">
+                <h3>[Refresh] 더 나은, 더 특별한</h3>
+                <p>Feel Refresh, Lively Every moments</p>
+                <div class="beauty_btn"><a href="#" class="sub-cont-tt">자세히 보기</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="sec1_controls">
+            <div class="sec1_prev t-LGWhite"><i class="fa-solid fa-angle-left"></i></div>
+            <div class="swiper-scrollbar bg-LGGray"></div>
+            <div class="sec1_next t-LGWhite"><i class="fa-solid fa-angle-right"></i></div>
+          </div>
+      </div>
+    <!-- </div> -->
+
+    <div class="moving">
+      <p>life begins at the end of your comfort zone</p>
+    </div>
+    
+    </section>
+
+    <section class="sec2">
         <p class="">#준비물부터 #할인까지</p>
         <h2 class="">캐비 가기 전 Check List ✔</h2>
         
-        <div class="start_slider_container">
-          <div class="start_slide_wrapper">
-            <div class="start_slides">
+        <div class="sec2_slider_container">
+          <div class="sec2_slide_wrapper">
+            <div class="sec2_slides">
 
               <div class="d-flex flex-column justify-content-between"> 
                 <p class="step">step 1</p>
-                <div class="start_slideLine">
+                <div class="sec2_slideLine">
                   <img src="img/Step1.png" alt="교통 정보">
                 </div>
                   <div class="video_wrapper">
@@ -124,7 +206,7 @@
               
               <div class="d-flex flex-column justify-content-between">
                 <p class="step">step 2</p>
-                <div class="start_slideLine">
+                <div class="sec2_slideLine">
                   <img src="img/Step2.png" alt="할인">
                 </div>
                   <div class="video_wrapper">
@@ -137,7 +219,7 @@
               </div>
               <div class="d-flex flex-column justify-content-between">
                 <p class="step">step 3</p>
-                <div class="start_slideLine">
+                <div class="sec2_slideLine">
                   <img src="img/Step3.png" alt="준비물">
                 </div>
                   <div class="video_wrapper">
@@ -150,7 +232,7 @@
                 </div>
               <div class="d-flex flex-column justify-content-between">
                 <p class="step">step 4</p>
-                <div class="start_slideLine">
+                <div class="sec2_slideLine">
                   <img src="img/Step4.png" alt="예약">
                 </div>
                   <div class="video_wrapper">
@@ -165,13 +247,77 @@
             </div>
           </div>
         </div>
-        <!-- <div class="start_controls">
-          <span id="start_prev"><i class="fas fa-angle-left"></i></span>
-          <span id="start_next"><i class="fas fa-angle-right"></i></span>
-        </div> -->
+        <div class="sec2_controls">
+          <span id="sec2_prev"><i class="fas fa-angle-left"></i></span>
+          <span id="sec2_next"><i class="fas fa-angle-right"></i></span>
+        </div>
       </section>
-    <section class="sec3"></section>
-    <section class="sec4"></section>
+
+    <section class="sec3">
+
+      <p class="">이렇게 놀아야 #캐비지</p>
+      <h2 class="">어트랙션 한 눈에 보기</h2>
+
+      <div class="">
+        <div>
+          <ul>
+            <li>파도풀 존</li>
+            <li>봅슬레이 존</li>
+            <li>타워 존</li>
+            <li>리버풀 존</li>
+            <li>스파 존</li>
+            <li>키즈 존</li>
+          </ul>
+       </div>
+
+       <div class="">
+         <div class="">
+            
+          <ul class="d-flex ">
+              <li>
+                <img src="" alt="">
+                <h3></h3>
+                <p></p>
+              </li>
+            </ul>
+          
+            <ul class="d-flex ">
+              <li>
+                <img src="" alt="">
+                <h3></h3>
+                <p></p>
+              </li>
+            </ul>
+          
+            <ul class="d-flex ">
+              <li>
+                <img src="" alt="">
+                <h3></h3>
+                <p></p>
+              </li>
+            </ul>
+         
+          </div>
+       </div>
+
+
+      </div>
+
+    </section>
+
+    <section class="sec4">
+      <div class="d-flex">
+        
+        <img src="img/Guid_a.svg" alt="">
+        <div> 
+          <p>"저는 스릴을 즐기러 왔어요 <br> 실내 에서 놀고 싶어요"</p>
+          <button>다른 조건 보기</button>
+          <button>추천 보러 보기</button>
+        </div>
+        <img src="img/Guid_b.svg" alt="">
+  
+      </div>
+    </section>
     <section class="sec5"></section>
     <section class="sec6"></section>
     <section class="sec7"></section>
