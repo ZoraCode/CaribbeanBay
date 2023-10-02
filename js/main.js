@@ -2,7 +2,7 @@
 
 $(function(){
     let sec1VideoContainer = $('.sec1_fullbg');  
-    let sec1VideoRatio = 1920;
+    let sec1VideoRatio = 1920/1000;
   
     $(window).resize(function(){
       let winWidth = $(window).width();
@@ -52,10 +52,9 @@ function sec2_slide(){
     let sec2_slideContainer = document.querySelector('.sec2_slider_container'),
       sec2_sliderWrap = sec2_slideContainer.querySelector('.sec2_slide_wrapper'),
       sec2_slides = sec2_sliderWrap.querySelectorAll('.sec2_slides'),
-      sec2_slideLine = sec2_sliderWrap.querySelectorAll('.sec2_slideLine line'),
       sec2_slideCount = sec2_slides.length,
-      sec2_slideWidth = 305,
-      sec2_slideMargin = 8,
+      sec2_slideWidth = 300,
+      sec2_slideMargin = 15,
       sec2_slideToShow = 4,
       sec2_currentIdx = 0,
       Sec2_autoSet = undefined,

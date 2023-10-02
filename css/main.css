@@ -77,19 +77,40 @@ header .bottom_menu.sticky{
   width: 100%;
 }
 
-.sec1_video_slide {height: 100%; overflow: hidden; position: relative;}
-.swiper{height: 800px;}
-.swiper-slide {overflow: hidden;}
-.sec1_fullbg {position: absolute;} 
-.swiper-slide video {position: absolute; height: 100%; }
+.sec1_video_slide {
+  height: 100%; 
+  overflow: hidden; 
+  position: relative;}
+.swiper{
+  height: 800px;
+}
+.swiper-slide {
+  overflow: hidden;
+}
+.sec1_fullbg {
+  position: absolute;
+}
+.swiper-slide video {
+  position: absolute; 
+  height: 100%; 
+}
 .sec1_videodesc {
-  position: absolute; left: 0; bottom: 0; 
+  position: absolute; 
+  left: 0; bottom: 0; 
   padding: 0 calc((100vw - 1272px)/2) 50px calc((100vw - 1272px)/2);
   text-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.15);
 }
-.sec1_videodesc h3 {font-size: 40px; font-weight: 700;}
-.sec1_videodesc p {font-size: 24px; padding: 30px 0 42px;}
-.sec1_videodesc .beauty_btn a {font-size: 16px;}
+.sec1_videodesc h3 {
+  font-size: 40px; 
+  font-weight: 700;
+}
+.sec1_videodesc p {
+  font-size: 24px; 
+  padding: 30px 0 42px;
+}
+.sec1_videodesc .beauty_btn a {
+  font-size: 16px;
+}
 .sec1_videodesc .beauty_btn {
   background-color: transparent; border: 2px solid var(--MC-LGWhite);
   border-radius: 7px; padding: var(--base-unit) 65px;
@@ -127,44 +148,38 @@ header .bottom_menu.sticky{
   background-color: var(--sub_color3);
   color: var(--white);
 }
+
+
 /* sec2 */
 
-/* 
-.sec2{
-  width: 1245px;
-  margin: 0 auto;
-  overflow: hidden;
-}
-.sec2 .step_list{
-  gap: 15px;
-}
-.sec2 .step_list .step_img{
-  height: 420px;
-  flex: 1;
-} */
 
 
 .sec2{
   position: relative;
   width: 1245px;
   margin: 0 auto;
+}
+.sec2 h3{
+  font-weight: bold;
+  color: var(--light_g2);
+  font-size: 20px;
+  padding: 15px 0 5px 0;
 }
 .sec2 .step{
-  padding-bottom: var(--padding);
+  text-transform: uppercase;
+  font-size: 16px;
+  color: var(--light_g3);
+  padding-bottom: calc(var(--padding)*.5);
 }
 .sec2_slider_container{
+  width: 1245px;
 	margin-top:calc(var(--padding)*2);
-	height: 420px;
+	height: 540px;
   position: relative;
   overflow: hidden;
-}
-.sec2_slideWrap h2{
-  padding-bottom: 7px;
 }
 .sec2_slide_wrapper{
   position: absolute;
-  height: 420px;
-  width:100%;
 	left:0;
 }
 .sec2_slide_wrapper.animated{
@@ -173,37 +188,16 @@ header .bottom_menu.sticky{
 .sec2_slide_wrapper .sec2_slides{
   display: flex;
   position: absolute;
-  height: 420px;
-  width:100%;
+  width: 1245px;
 }
-.sec2_slide_wrapper .sec2_slides div[class^="coverImg"]{
+.sec2_slide_wrapper .sec2_slides li{
 	flex:1;
-	transition:0.3s;
-  box-sizing: margin-box;
-  margin-right: 8px;
 }
-.sec2_slide_wrapper .sec2_slides > div:hover{
-	flex:2;
-}
+
 .sec2_controls{
 	position: absolute;
   font-size: 100px;
   opacity: 0.1;
-}
-.sec2 .coverImg1{
-	background: url(../img/Step1.png) no-repeat center center/cover;
-}
-.sec2 .coverImg2{
-	background: url(../img/Step2.png) no-repeat center center/cover;
-}
-.sec2 .coverImg3{
-	background: url(../img/Step3.png) no-repeat center center/cover;
-}
-.sec2 .coverImg4{
-	background: url(../img/Step4.png) no-repeat center center/cover;
-}
-.sec2 .coverImg5{
-	background: url(../img/Step5.gif) no-repeat center center/cover;
 }
 .sec2 .sec2_slides > div{
   position: relative;
