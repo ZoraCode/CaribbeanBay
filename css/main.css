@@ -112,7 +112,8 @@ header .bottom_menu.sticky{
   font-size: 16px;
 }
 .sec1_videodesc .beauty_btn {
-  background-color: transparent; border: 2px solid var(--MC-LGWhite);
+  
+  
   border-radius: 7px; padding: var(--base-unit) 65px;
   box-shadow: var(--box-shadow);
   transition: 0.3s ease-out;
@@ -219,3 +220,19 @@ header .bottom_menu.sticky{
 	display: block;
   object-fit: cover;
 } 
+
+
+
+/* sec3 */
+.sec3 .blist ul{
+  gap: var(--padding);
+}
+.sec3 .blist .nbtn{
+  border: 1px solid var(--sub_color3);
+  line-height: 20px;
+  color: var(--sub_color3);
+}
+.sec3 .sizeCt img{
+  width: 300px;
+  height: 300px;
+}
