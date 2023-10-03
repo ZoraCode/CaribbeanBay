@@ -65,6 +65,9 @@ header .bottom_menu .menu_list{
   gap:var(--padding);
   line-height: 60px;
 }
+header .bottom_menu .menu_list li{
+  
+}
 header .bottom_menu.sticky{
   position: fixed;
   top:0;
@@ -229,6 +232,10 @@ header .bottom_menu.sticky{
 
 
 /* sec3 */
+.sec3 .title p,
+.sec3 .title h2{
+  text-align: center;
+}
 .sec3 .blist ul{
   gap: var(--padding);
 }
