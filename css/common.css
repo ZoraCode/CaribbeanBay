@@ -139,6 +139,9 @@ h1,h2,h3,h4,h5,h6,p,span,textarea,input,label,a{
 .sm_pd {
   padding-bottom: calc(var(--padding) * 2);
 }
+.pd {
+  padding-bottom: calc(var(--padding));
+}
 .cf:after {
   content: "";
   display: block;

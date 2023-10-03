@@ -18,8 +18,11 @@ header .top_menu h1 a{
   width: 189px;
   height: 62px;
 }
-legend{
+header legend{
   display: none;
+}
+header legend #keyword{
+  margin-left: 50px;
 }
 header .top_menu .open_search{
   width: 600px;
@@ -37,6 +40,8 @@ header .top_menu .open_search .fa-solid{
 header .top_menu .open_search input{
   color: var(--light_g3);
   font-weight: 500;
+  margin-left: 50px;
+  width: 100%;
 }
 
 header .top_menu .icon{
@@ -48,7 +53,7 @@ header .bottom_menu{
   width: 100%;
   background:linear-gradient( #fff 60px,rgba(255,255,255,.9) 60px);
   transition: 0.3s;  
-  overflow: hidden;
+  /* overflow: hidden; */
   height: 60px;
   position: absolute;
 }

@@ -43,7 +43,7 @@
             <div class="">
               <div class="open_search d-flex position-relative" onclick="">
                 <i class="fa-solid fa-magnifying-glass position-absolute"></i>
-                <input id="keyword" name="keyword" fw-filter="" fw-label="검색어" fw-msg="" placeholder="            무엇을 찾고 계신가요? " onkeyup="SEARCH_HASHTAG.getHashtag($(this)); " autocomplete="off" onmousedown="SEARCH.clickSearchForm(this)" value="" type="text"/>
+                <input id="keyword" name="keyword" fw-filter="" fw-label="검색어" fw-msg="" placeholder="무엇을 찾고 계신가요? " onkeyup="SEARCH_HASHTAG.getHashtag($(this)); " autocomplete="off" onmousedown="SEARCH.clickSearchForm(this)" value="" type="text"/>
               </div>
             </div>
           </fieldset>
@@ -71,11 +71,40 @@
     <nav class="bottom_menu">
       <div class="bottom_list">
         <ul class="menu_list container d-flex justify-content-center p2">
-          <li><a href="">이용정보</a></li>
-          <li><a href="">요금 프로모션</a></li>
-          <li><a href="">어트랙션</a></li>
-          <li><a href="">캐리비안베이 즐기기</a></li>
-          <li><a href="">커뮤니티</a></li>       
+          <li><a href="">이용정보</a>
+            <ul>
+              <li><a href="">이용방법</a></li>
+              <li><a href="">운영시간</a></li>
+              <li><a href="">편의시설</a></li>
+              <li><a href="">교통정보</a></li>
+            </ul>
+          </li>
+          <li><a href="">요금 & 프로모션</a>
+            <ul>
+              <li><a href="">이벤트</a></li>
+              <li><a href="">이용요금</a></li>
+              <li><a href="">제휴카드</a></li>
+            </ul>
+          </li>
+          <li><a href="">어트랙션</a>
+            <ul>
+              <li><a href="">어트랙션</a></li>
+              <li><a href="">가이드맵</a></li>
+              <li><a href="">주의사항</a></li>
+            </ul></li>
+          <li><a href="">캐리비안베이 즐기기</a>
+            <ul>
+              <li><a href="">식음료&빌리지</a></li>
+              <li><a href="">예약</a></li>
+              <li><a href="">공지사항</a></li>
+            </ul>
+          </li>
+          <li><a href="">커뮤니티</a>
+            <ul>
+              <li><a href="">문의 상담</a></li>
+              <li><a href="">카카오톡</a></li>
+            </ul>
+          </li>       
         </ul>
       </div>
     </nav>
@@ -500,9 +529,9 @@
 
           <div class="Sec5_left d-flex flex-column">
             <p class="mt light_g2">여름엔 캐비지!</p>
-            <h2 class="tt light_g1">캐리비안베이 더 즐기기</h2>
+            <h2 class="tt light_g1 pd">캐리비안베이 더 즐기기</h2>
             <div class="d-flex">
-              <p>인증을 부탁해! <br>
+              <p class="p1 light_g3">인증을 부탁해! <br>
               캐비 고객과 함께 즐기는 SNS 생생한 리뷰!</p>
             </div>
             <img src="" alt="이미지">
