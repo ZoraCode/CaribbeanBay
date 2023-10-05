@@ -65,9 +65,9 @@ header .bottom_menu .menu_list{
   gap:var(--padding);
   line-height: 60px;
 }
-header .bottom_menu .menu_list li{
+/* header .bottom_menu .menu_list li{
   
-}
+} */
 header .bottom_menu.sticky{
   position: fixed;
   top:0;
@@ -120,8 +120,6 @@ header .bottom_menu.sticky{
   font-size: 16px;
 }
 .sec1_videodesc .beauty_btn {
-  
-  
   border-radius: 7px; padding: var(--base-unit) 65px;
   box-shadow: var(--box-shadow);
   transition: 0.3s ease-out;
@@ -240,11 +238,56 @@ header .bottom_menu.sticky{
   gap: var(--padding);
 }
 .sec3 .blist .nbtn{
-  border: 1px solid var(--sub_color3);
+  border: 1px solid var(--sub_color2);
   line-height: 20px;
-  color: var(--sub_color3);
+  color: var(--sub_color2);
+}
+.sec3 .blist .nbtn a{
+  display: block;
+  transform: translateY(2px);
 }
 .sec3 .sizeCt img{
   width: 300px;
   height: 300px;
+}
+
+/* sec4 */
+
+.sec4 form div:first-child,
+.sec4 form div:nth-child(2){
+  gap: calc(var(--padding)*0.5);
+}
+
+.sec4 form .ctr{
+  gap: var(--padding);
+}
+.sec4 form .other{
+  background-color: var(--navy);
+  color: var(--white);
+}
+.sec4 form .look{
+  background-color: var(--sub_color2);
+  color: var(--white);
+}
+.sec4 form .other a,
+.sec4 form .look a{
+  transform: translateY(2px);
+}
+
+
+
+/* sec5 */
+
+.sec5 .container{
+  gap: calc(var(--padding)*2);
+}
+.sec5 .Sec5_left .event{
+  display: block;
+  width: 265px;
+  background: var(--sub_color2);
+  color: var(--white);
+}
+.sec5 .Sec5_left .event a{
+  display: block;
+  transform: translateY(2px);
 }

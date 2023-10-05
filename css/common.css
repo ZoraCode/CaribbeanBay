@@ -26,10 +26,17 @@ h1,h2,h3,h4,h5,h6,p,span,textarea,input,label,a{
   --sub_color1: #F69311;
   --sub_color2: #8A77E5;
   --sub_color3: #F7B0DA;
+  --navy: #1D2031;
 }
 
 .white {
   color: var(--white);
+}
+.black {
+  color: var(--black);
+}
+.navy{
+  color: var(--navy);
 }
 .light_g1 {
   color: var(--light_g1);
@@ -39,9 +46,6 @@ h1,h2,h3,h4,h5,h6,p,span,textarea,input,label,a{
 }
 .light_g3 {
   color: var(--light_g3);
-}
-.black {
-  color: var(--black);
 }
 .main_color {
   color: var(--main_color);
