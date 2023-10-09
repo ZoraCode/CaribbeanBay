@@ -51,9 +51,9 @@ header .top_menu .icon{
 
 header .bottom_menu{
   width: 100%;
-  background:linear-gradient( #fff 60px,rgba(255,255,255,.9) 60px);
+  background:linear-gradient( #fff 60px,rgba(255,255,255,.8) 60px);
   transition: 0.3s;  
-  /* overflow: hidden; */
+  overflow: hidden;
   height: 60px;
   position: absolute;
 }
@@ -62,12 +62,19 @@ header .bottom_menu .bottom_list{
   border-bottom: 1px var(--sub_color1) solid;
 }
 header .bottom_menu .menu_list{
-  gap:var(--padding);
+  /* gap:var(--padding); */
   line-height: 60px;
+  text-align: center;
 }
-/* header .bottom_menu .menu_list li{
-  
-} */
+header .bottom_menu .menu_list li{
+  padding: 0 15px 0 15px;
+}
+header .bottom_menu .menu_list li ul{
+  line-height: calc(var(--padding)*1.5);
+}
+header .bottom_menu .menu_list li ul li a{
+  display: block;
+}
 header .bottom_menu.sticky{
   position: fixed;
   top:0;
@@ -203,8 +210,7 @@ header .bottom_menu.sticky{
 
 .sec2_controls{
 	position: absolute;
-  font-size: 100px;
-  opacity: 0.1;
+  display: none;
 }
 .sec2 .sec2_slides > div{
   position: relative;
@@ -241,6 +247,10 @@ header .bottom_menu.sticky{
   border: 1px solid var(--sub_color2);
   line-height: 20px;
   color: var(--sub_color2);
+}
+.sec3 .blist .nbtn:hover{
+  color: var(--white);
+  background-color: var(--sub_color2);
 }
 .sec3 .blist .nbtn a{
   display: block;
@@ -290,4 +300,22 @@ header .bottom_menu.sticky{
 .sec5 .Sec5_left .event a{
   display: block;
   transform: translateY(2px);
+}
+.sec5 .Sec5_right .slider_box{
+  gap: 15px;
+}
+.sec5 .Sec5_right .sec5_slider1,
+.sec5 .Sec5_right .sec5_slider2{
+  gap: 15px;
+}
+
+/* sec6 */
+.sec6 .title{
+  text-align: center;
+}
+.sec6 .food_list{
+  margin: 0 auto;
+}
+.sec6 .food_list div{
+  gap: calc(var(--padding)*.5);
 }
