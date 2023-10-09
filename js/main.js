@@ -7,17 +7,17 @@ headerHeight = header.offsetHeight;
 let headerBottomOST = header.offsetTop;
 let headerSubmenuHeight = 0;
 
-// dl 리스트를 아이템에 담고
+// ul 리스트를 아이템에 담고
 headerSubmenu.forEach(item=>{
-// 만약 dl높이가 0(서브메뉴높이)보다 크면
+// 만약 ul높이가 0(서브메뉴높이)보다 크면
   if(item.offsetHeight > headerSubmenuHeight){
-// 서브메뉴 높이는 dl 리스트의 높이
+// 서브메뉴 높이는 ul 리스트의 높이
     headerSubmenuHeight = item.offsetHeight;
   }
 });
 
 // console.log(headerSubmenuHeight);
-// header총값 = 바텀메뉴OST + dl메뉴크기 + 45px
+// header총값 = 바텀메뉴OST + ul메뉴크기 + px
 let headerTotal = `${headerHeight + headerSubmenuHeight + 15}px`;
 
 //바텀메뉴에 마우스를 올리면 할일,일어날 일
@@ -192,3 +192,7 @@ function sec2_slide(){
   });
   
   $(window).trigger('resize');
+
+
+  // sc4
+

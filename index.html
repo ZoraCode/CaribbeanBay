@@ -15,8 +15,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
+  
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/main.css">
@@ -94,7 +93,8 @@
             </ul></li>
           <li><a href="">캐리비안베이 즐기기</a>
             <ul>
-              <li><a href="">식음료&빌리지</a></li>
+              <li><a href="">레스토랑</a></li>
+              <li><a href="">빌리지</a></li>
               <li><a href="">예약</a></li>
               <li><a href="">공지사항</a></li>
             </ul>
@@ -167,41 +167,45 @@
              <div class="swiper-slide">
                <div class="sec1_fullbg position-relative">
                  <img class="sec1_img" src="img/Main_a.png" alt="메인 홍보 이미지">
+                 <img class="sec1_ob" src="img/Main_ob.png" alt="메인 홍보 이미지">
                  <!-- <img class="position-absolute pologo" src="img/Main_a_mid.png" alt="" > -->
                </div>
-               <div class="sec1_videodesc t-LGWhite">
-                <h3>Mega Wave</h3>
-                <p>Festival</p>
-                <p>23.10.01~12.25</p>
-                 <div class="beauty_btn"><a href="#">자세히 보기</a></div>
+               <div class="sec1_text d-flex flex-column">
+                <!-- <img src="img/Main_a_mid.png" alt="메인 중앙 이미지"> -->
+                <h3>크라켄 메가 DJ 풀 파티</h3>
+                <p class="text-center">Club Cabi KRAKEN Mega DJ Pool Party</p>
+                 <div class="nbtn align-self-center"><a href="#" class="">자세히 보기</a></div>
                </div>
              </div>
              <div class="swiper-slide">
                <div class="sec1_fullbg">
-                <img class="sec1_img" src="img/Main_a.png" alt="메인 홍보 이미지">
+                <img class="sec1_img" src="img/Main_c.png" alt="메인 홍보 이미지">
+                <img class="sec1_ob" src="" alt="메인 홍보 이미지">
                </div>
-               <div class="sec1_videodesc t-LGWhite">
-                 <h3 class="main-tt">[Healthy] 더 나은, 더 특별한</h3>
-                 <p>Global Lifestyle Creating Company</p>
-                 <div class="beauty_btn"><a href="#">자세히 보기</a></div>
+               <div class="sec1_text  ">
+                 <h3 class="main-tt">Club Cabi KRAKEN Mega DJ Pool Party</h3>
+                 <p>Club Cabi KRAKEN Mega DJ Pool Party</p>
+                 <div class="nbtn"><a href="#">자세히 보기</a></div>
                </div>
              </div>
              <div class="swiper-slide">
                <div class="sec1_fullbg">
-                <img class="sec1_img" src="img/Main_a.png" alt="메인 홍보 이미지">
+                <img class="sec1_img" src="img/Main_b.png" alt="메인 홍보 이미지">
+                <img class="sec1_obi" src="" alt="메인 홍보 이미지">
                </div>
-               <div class="sec1_videodesc t-LGWhite">
-                 <h3>Mega Wave</h3>
-                 <p>Festival</p>
-                 <p>23.10.01~12.25</p>
-                 <div class="beauty_btn"><a href="#" class="sub-cont-tt">자세히 보기</a></div>
+               <div class="sec1_text  ">
+                 <h3>캐비 포토 스튜디오</h3>
+                 <p>반짝반짝 빛나는 우리의 지금 이 순간, 캐비 포토 스튜디오에서 가장 아름답고 멋지게 기록해 보세요!</p>
+                 <p>전신 혹은 상반신 바디프로필 셀프 촬영 가능합니다. <br>
+                  캐비 포토 스튜디오는 유료 시설입니다.</p>
+                 <div class="nbtn"><a href="#" class="sub-cont-tt">자세히 보기</a></div>
                </div>
              </div>
            </div>
            <div class="sec1_controls">
-             <div class="sec1_prev t-LGWhite"><i class="fa-solid fa-angle-left"></i></div>
-             <div class="swiper-scrollbar bg-LGGray"></div>
-             <div class="sec1_next t-LGWhite"><i class="fa-solid fa-angle-right"></i></div>
+             <div class="sec1_prev  "><i class="fa-solid fa-angle-left"></i></div>
+             <div class="swiper-scrollbar"></div>
+             <div class="sec1_next  "><i class="fa-solid fa-angle-right"></i></div>
            </div>
        </div>
      <!-- </div> -->
@@ -407,14 +411,14 @@
                 <p>보드판을 이용해 파도의 서핑을 체험하는 서핑 라이드!</p>
               </li>
 
-              <!-- <li>
+               <li>
                 <div class="sizeCt">
                   <img src="img/Attr_e.png" alt="서핑라이드">
                 </div>
                 <h3>서핑 라이드</h3>
                 <p>보드판을 이용해 파도의 서핑을 체험하는 서핑 라이드!</p>
               </li>
-
+<!--
               <li>
                 <div class="sizeCt">
                   <img src="img/Attr_f.png" alt="서핑라이드">
@@ -484,7 +488,7 @@
     </section>
 
     <section class="sec4 big_pd">
-      <div class="d-flex justify-content-center align-items-center">
+      <div class="d-flex justify-content-center align-items-center three">
         
         <img src="img/Guid_a.svg" alt="">
        
@@ -492,7 +496,7 @@
 
         <form>
 
-          <div class="d-flex justify-content-center"> 
+          <div class="d-flex justify-content-center pd">
             <p class="select_a mt">"저는</p>
               <select name="choice" id="choice">
                 <option value="type_a">스릴을 즐기러</option>
@@ -646,13 +650,13 @@
 
 
     <section class="sec7">
-      <div class="d-flex">
+      <div class="d-flex justify-content-around container">
         <div class="stock"></div>
         <div class="today">
-          <h2>today</h2>
-          <p>10월 10일 (테스트)</p>
-          <p>실내 <span>10:00 - 17:00</span></p>
-          <p>실외 <span>10:00 - 17:00</span></p>
+          <h2 class="tt light_g1 sm_pd">today</h2>
+          <p class="pd">10월 10일 (테스트)</p>
+          <p class="pd">실내 <span class="mt">10:00 - 17:00</span></p>
+          <p class="pd">실외 <span class="mt">10:00 - 17:00</span></p>
           <div class="event nbtn d-flex align-self-center">
             <a href="">더 많은 Photo 리뷰 보기</a>
           </div>
@@ -662,7 +666,7 @@
           <table class="table">
             <thead>
               <tr>
-                <th scope="col">NEWS & NOTICE</th>
+                <th colspan="2" class="tt light_g1 sm_pd">NEWS & NOTICE</th>
                 <th scope="col">자세히보기</th>
               </tr>
             </thead>
