@@ -282,12 +282,17 @@ header .bottom_menu.sticky{
 .sec4 form #choice,
 .sec4 form #out{
   /* border: 1px solid var(--sub_color2); */
+  cursor: pointer;
   border: none;
   border-radius: 10px;
   font-size: 30px;
   font-weight: bold;
   color: var(--sub_color2);
   /* padding: 0 calc(var(--padding)*0.5); */
+}
+.sec4 form #choice:hover,
+.sec4 form #out:hover{
+  color: var(--sub_color3);
 }
 .sec4 form .ctr{
   gap: var(--padding);
