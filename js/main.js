@@ -92,6 +92,8 @@ $(function(){
     sec1Swiper.slideNext();
   }); 
 
+  
+  
 //   sec2
 
 function sec2_slide(){
