@@ -58,8 +58,8 @@ header .bottom_menu{
   position: absolute;
 }
 header .bottom_menu .bottom_list{
-  height: 60px;
-  border-bottom: 1px var(--sub_color1) solid;
+  height: 61px;
+  border-bottom: 1px var(--sub_color2) solid ;
 }
 header .bottom_menu .menu_list{
   /* gap:var(--padding); */
@@ -113,6 +113,14 @@ header .bottom_menu.sticky{
 }
 .sec1_fullbg {
   position: absolute;
+}
+.sec1 .nbtn{
+  color: var(--white);
+  border: 1px solid var(--white);
+}
+.sec1 .nbtn:hover{
+  background-color: var(--white);
+  color: var(--navy);
 }
 .swiper-slide video {
   position: absolute; 
@@ -322,9 +330,7 @@ header .bottom_menu.sticky{
   gap: calc(var(--padding)*2);
 }
 .sec5 .Sec5_left .event{
-  display: block;
-  width: 265px;
-  background: var(--sub_color2);
+  background-color: var(--sub_color2);
   color: var(--white);
 }
 .sec5 .Sec5_left .event a{
@@ -363,6 +369,13 @@ header .bottom_menu.sticky{
 .sec7 .today{
   text-align: center;
   text-transform: uppercase;
+}
+.sec7 .today .nbtn{
+  background: var(--sub_color2);
+  color: var(--white);
+}
+.sec7 .today .nbtn a{
+transform: translateY(2px);
 }
 .sec7 .today span{
   color: var(--sub_color1);
