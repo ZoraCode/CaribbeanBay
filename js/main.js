@@ -92,8 +92,22 @@ $(function(){
     sec1Swiper.slideNext();
   }); 
 
-  
-  
+
+
+  //Banner Slide
+
+  $(function () {
+    $(".Slide_Choice").bxSlider({
+      minSlides: 3,
+      maxSlides: 6,
+      slideWidth: 800,
+      slideMargin: 10,
+      ticker: true,
+      speed: 50000,
+    });
+  });
+
+
 //   sec2
 
 function sec2_slide(){
@@ -196,5 +210,50 @@ function sec2_slide(){
   $(window).trigger('resize');
 
 
+// sec3
+
+const sec3swiper = new Swiper('.sec3ab', {
+  slidesPerView: 5,
+  
+  direction: 'horizontal',
+  loop: true,
+  autoplay: {
+    delay: 3000,
+  },
+
+ });
+
+
+
+
   // sc4
 
+
+
+
+  // sec5
+
+  $(function () {
+    $(".sec5_slider1").bxSlider({
+      mode: 'vertical',
+      
+      ticker: true,
+      slideWidth: 500,
+      slideMargin: 15,
+      minSlides: 3,
+      maxSlides: 5
+    });
+  });
+
+  $(function () {
+    $(".sec5_slider").bxSlider({
+      mode: 'vertical',
+      adaptiveHeight:true,
+      adaptiveHeightSpeed:500,
+      ticker: true,
+      slideWidth: 800,
+      slideMargin: 15,
+      minSlides: 3,
+      maxSlides: 5
+    });
+  });
