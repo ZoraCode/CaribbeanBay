@@ -46,7 +46,7 @@
               <div class="open_search d-flex position-relative" onclick="">
                 <i class="fa-solid fa-magnifying-glass position-absolute"></i>
                 <input id="keyword" name="keyword" fw-filter="" fw-label="검색어" fw-msg="" placeholder="무엇을 찾고 계신가요? " onkeyup="SEARCH_HASHTAG.getHashtag($(this)); " autocomplete="off" onmousedown="SEARCH.clickSearchForm(this)" value="" type="text"/>
-              </div>
+              </div> 
             </div>
           </fieldset>
 
@@ -75,10 +75,10 @@
         <ul class="menu_list container d-flex justify-content-center p2">
           <li><a href="">이용정보</a>
             <ul>
-              <li><a href="">이용방법</a></li>
-              <li><a href="">운영시간</a></li>
-              <li><a href="">편의시설</a></li>
-              <li><a href="">교통정보</a></li>
+              <li><a data-text="About Us" href="">이용방법</a></li>
+              <li><a data-text="About Us" href="">운영시간</a></li>
+              <li><a data-text="About Us" href="">편의시설</a></li>
+              <li><a data-text="About Us" href="">교통정보</a></li>
             </ul>
           </li>
           <li><a href="">요금 & 프로모션</a>
@@ -171,13 +171,13 @@
             <div class="swiper-slide">
               <div class="sec1_fullbg position-relative">
                 <img class="sec1_img" src="img/Main_a.png" alt="메인 홍보 이미지">
-                <!-- <img class="sec1_ob" src="img/Main_ob.png" alt="메인 홍보 이미지"> -->
+                <img class="deco position-absolute" src="img/main_deco_crowd.png" alt="메인 홍보 이미지">
               </div>
               <div class="sec1_text d-flex flex-column">
 
                <h3 class="ti3 text-center pd">크라켄 DJ 메가 풀 파티</h3>
                <h4 class="text-center sm_pd">Cabi Mega Pool Party</h4>
-               <p class="p1 pd ">올여름 무더위를 날려버릴 EDM 풀 파티, 그 강력한 DJ 라인업을 공개합니다! <br>
+               <p class="st pd ">올여름 무더위를 날려버릴 EDM 풀 파티, 그 강력한 DJ 라인업을 공개합니다! <br>
                  열정 넘치는 무대 아래 쿨하고 힙하게 놀아볼까요?!</p>
 
                 <button class="lik align-self-center p2"><a href="#" class="">이벤트 보러가기</a></button>
@@ -209,8 +209,9 @@
                <div class="sec1_text d-flex container photo">
                 <img src="img/insta_img_01.jpg" alt="이미지" class="mj">
                 <img src="img/insta_deco_02.png" alt="이미지" class="position-absolute tj">
-                <div class="d-flex flex-column">
+                <div class="d-flex flex-column position-relative">
                     <h3 class="sm_pd">캐비 포토 스튜디오</h3>
+                    <span class="stfont position-absolute">Signature Photo Spot</span>
                     <p class="st pd">반짝반짝 빛나는 우리의 지금 이 순간, 캐비 포토 스튜디오에서 가장 아름답고 멋지게 기록해 보세요!</p>
                     <p class="st m_pd">전신 혹은 상반신 바디프로필 셀프 촬영 가능합니다. <br>
                       캐비 포토 스튜디오는 유료 시설입니다.</p>
@@ -233,12 +234,13 @@
   
   <div class="text-slider Slide_Choice">
     <!-- Slides -->
-    <div class="swiper-slide"><p>Life begins at the end of your Comfort Zone.</p></div>
-    <div class="swiper-slide"><p>A Smile can brighten somemon's Day.</p></div>
-    <div class="swiper-slide"><p>Life is short, Make every hair flip count.</p></div>
-    <div class="swiper-slide"><p>Create your own Sunshine on cloudy days.</p></div>
-    <div class="swiper-slide"><p>Stay close to people who feel like sunlight.</p></div>
-    <div class="swiper-slide"><p>Don't be afraid to sparkle a little brighter.</p></div>
+    <div class="swiper-slide"><p>Life begins at the end of your Comfort Zone. A Smile can brighten somemon's Day.</p></div>
+    <div class="swiper-slide"><p>Life is short, Make every hair flip count. Create your own Sunshine on cloudy days.</p></div>
+    <div class="swiper-slide"><p>Stay close to people who feel like sunlight. Don't be afraid to sparkle a little brighter.</p></div>
+    <div class="swiper-slide"><p>Life begins at the end of your Comfort Zone. A Smile can brighten somemon's Day.</p></div>
+    <div class="swiper-slide"><p>Life is short, Make every hair flip count. Create your own Sunshine on cloudy days.</p></div>
+    <div class="swiper-slide"><p>Stay close to people who feel like sunlight. Don't be afraid to sparkle a little brighter.</p></div>
+    
   </div>
      
      </section>
@@ -322,9 +324,10 @@
 
     <section class="sec3 big_pd">
 
-      <div class="container title">
+      <div class="container title position-relative">
         <p class="mt light_g2">이렇게 놀아야 #캐비지!</p>
-        <h2 class="tt light_g1 sm_pd">어트랙션 한 눈에 보기</h2>
+        <h2 class="tt light_g1 sm_pd">어트랙션 한 눈에 보기<span class="mt">👀</span></h2>
+        <span class="stfont position-absolute">A glance at the attraction</span>
       </div>
 
       <div class="blist ">
@@ -575,8 +578,8 @@
   
 
     <div class="bg_move_slider position-absolute">
-      <p>Carribian BAY Carribian BAY Carribian BAY</p>
-      <p>Carribian BAY Carribian BAY Carribian BAY</p>
+      <p class="stfont">Carribian BAY Carribian BAY Carribian BAY</p>
+      <p class="stfont">Carribian BAY Carribian BAY Carribian BAY</p>
     </div>
 
   </section>
