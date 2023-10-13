@@ -94,8 +94,8 @@ h1,h2,h3,h4,h5,h6,p,span,textarea,input,label,a,select,option{
   line-height: calc(var(--padding) * 3);
 }
 .st {
-  font-size: 30px;
-  font-weight: bold;
+  font-size: 25px;
+  font-weight: normal;
   line-height: calc(var(--padding) * 2);
 }
 .mt {

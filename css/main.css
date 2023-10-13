@@ -182,17 +182,14 @@ header .bottom_menu.sticky{
 /* sec2 */
 
 
-
-.sec2{
-  position: relative;
-  width: 1245px;
-  margin: 0 auto;
-}
 .sec2 h3{
   font-weight: bold;
   color: var(--light_g2);
   font-size: 20px;
   padding: 15px 0 5px 0;
+}
+.sec2 .sec2_slides{
+  height: 550px;
 }
 .sec2 .step{
   text-transform: uppercase;
@@ -200,56 +197,16 @@ header .bottom_menu.sticky{
   color: var(--light_g3);
   padding-bottom: calc(var(--padding)*.5);
 }
-.sec2_slider_container{
-  width: 1245px;
-	margin-top:calc(var(--padding)*2);
-	height: 540px;
-  position: relative;
-  overflow: hidden;
+.sec2 li:nth-child(2n){
+  transform: translateY(15px);
 }
-.sec2_slide_wrapper{
-  position: absolute;
-	left:0;
-}
-.sec2_slide_wrapper.animated{
-	transition:left 0.5s ease-out;
-}
-.sec2_slide_wrapper .sec2_slides{
-  display: flex;
-  position: absolute;
-  width: 1245px;
-}
-.sec2_slide_wrapper .sec2_slides li{
-	flex:1;
+.sec2 li:hover{
+  opacity: .9;
 }
 
-.sec2_controls{
-	position: absolute;
+.sec2 .change{
   display: none;
 }
-.sec2 .sec2_slides > div{
-  position: relative;
-}
-.sec2 video{
-  top: 0;
-  left: 0;
-  display: block;
-	position: absolute;
-	display: none;
-  width: 100%;
-  height: 100%;
-}
-
-.sec2 .sec2_slides > div:hover{
-	display: none;
-}
-.sec2 .sec2_slides > div:hover video{
-	display: block;
-  object-fit: cover;
-} 
-
-
-
 /* sec3 */
 
 .sec3 .title p,
@@ -323,7 +280,6 @@ header .bottom_menu.sticky{
 /* sec5 */
 
 .sec5{
-  /* height: 950px; */
   overflow: hidden;
   margin-bottom: calc(var(--padding)*5);
 }
@@ -347,26 +303,115 @@ header .bottom_menu.sticky{
   gap: 15px;
 }
 
+.bg_move_slider{
+  top: 0; bottom: 0; left: 0; right: 0;
+  z-index: -2;
+}
+.bg_move_slider p:first-child {
+  width: 100%;
+  font-size: 500px;
+  color: rgb(127, 140, 255);
+  opacity: 0.1;
+  white-space: nowrap;
+  font-weight: bold;
+  animation: slideAnimation3 40s linear infinite;
+}
+
+.bg_move_slider p:last-child {
+  width: 100%;
+  font-size: 500px;
+  transform: translateY(-600px);
+  color: #999;
+  font-weight: bold;
+  white-space: nowrap;
+  opacity: 0.1;
+  animation: slideAnimation4 40s linear infinite;
+}
+
+@keyframes slideAnimation3 {
+  0% {
+    transform: translateX(0%);
+  }
+  25% {
+    transform: translateX(-50%);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  75% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slideAnimation4 {
+  0% {
+    transform: translateX(0%);
+  }
+  25% {
+    transform: translateX(50%);
+  }
+  50% {
+    transform: translateX(75%);
+  }
+  75% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+
 /* sec6 */
 .sec6 .title{
   text-align: center;
 }
 .sec6 .food_list{
   margin: 0 auto;
+  gap:10px;
 }
-.sec6 .food_list div{
-  gap: calc(var(--padding)*.5);
+.sec6 .food_list .d-flex{
+  gap:10px;
+}
+.sec6 .food_list .box{
+  position: relative;
+  cursor: pointer;
+}
+.sec6 .food_list .box:hover:nth-child(odd){
+  opacity: .93;
+  transform: rotate(-1deg);
+}
+.sec6 .food_list .box:hover:nth-child(2n){
+  opacity: .93;
+  transform: rotate(1deg);
+}
+.sec6 .food_list .box p{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: calc(var(--padding)*.5);
+  color: var(--white);
+  z-index: 2;
+  line-height: 22px;
+  font-weight: lighter;
+}
+
+.sec6 .food_list .box:after{
+  content: '';
+  background: none;
+  position: absolute;
+  top:0; left:0px; right:0; bottom:0;
+  border-radius: 5px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 42.71%, rgba(0, 0, 0, 0.80) 100%);
 }
 
 /* sec7 */
 
 .sec7{
   margin: 0 auto;
-}
-.sec7 .stock{
-  height: auto;
-  width: 15px;
-  background-color: #DABFAA;
 }
 .sec7 .today{
   text-align: center;
@@ -382,9 +427,14 @@ transform: translateY(2px);
 .sec7 .today span{
   color: var(--sub_color1);
 }
+.sec7 .news .nplus{
+  font-size: 30px;
+  text-align: end;
+}
 .sec7 .news .table thead{
   line-height: 90px;
 }
 .sec7 .news .table tbody tr{
-  line-height: 30px
+  line-height: 30px;
+  font-size: 20px;
 }

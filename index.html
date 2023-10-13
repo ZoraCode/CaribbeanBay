@@ -11,6 +11,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link href="css/hover-min.css" rel="stylesheet">
+  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
@@ -227,74 +229,77 @@
 
     <section class="sec2 big_pd">
 
-      <div class="">
+      <div class="container">
         <p class="mt light_g2">#준비물부터 #할인까지</p>
         <h2 class="tt light_g1 sm_pd">캐비 가기 전 Check List</h2>
       </div>
 
-      <div class="sec2_controls">
-        <span id="sec2_prev"><i class="fas fa-angle-left"></i></span>
-        <span id="sec2_next"><i class="fas fa-angle-right"></i></span>
-      </div>
+      <ul class="sec2_slides d-flex container">
 
-        <div class="sec2_slider_container">
-          <div class="sec2_slide_wrapper">
-            <ul class="sec2_slides d-flex ">
-                  
-                    <li>
-                      <p class="step">step 1</p>
-                      <div class="">
-                        <img src="img/Step1.png" alt="">
-                        <div class="video_wrapper">
-                          <video class="change" src="img/Step5.gif" alt="">
-                        </div>
-                      </div>
-                        <h3 class="">교통 정보</h3>
-                        <p class="p3 light_g3">#물놀이가자 #대중교통</p>
-                    </li>
+            <li>
+              <p class="step">step 1</p>
+              <div class="position-relative">
+                <img src="img/Step1.png" alt="이미지">
+                <video class="change" src="img/Step5.gif" alt="이미지">
+              </div>
+              <h3 class="">교통 정보</h3>
+              <p class="p3 light_g3">#물놀이가자 #대중교통</p>
+            </li>
+            
+            <li>
+              <p class="step">step 2</p>
+              <div class="position-relative">
+                <img src="img/Step2.png" alt="이미지">
+                <video class="change" src="img/Step5.gif" alt="이미지">
+              </div>
+              <h3 class="">할인 프로모션</h3>
+              <p class="p3 light_g3">#카드할인 #EVENT</p>
+            </li>
+            
+            <li>
+              <p class="step">step 3</p>
+              <div class="position-relative">
+                <img src="img/Step3.png" alt="이미지">
+                <video class="change" src="img/Step5.gif" alt="이미지">
+              </div>
+              <h3 class="">준비물</h3>
+              <p class="p3 light_g3">#대여서비스 #ITEM</p>
+            </li>
+            
+            <li>
+              <p class="step">step 4</p>
+              <div class="position-relative">
+                <img src="img/Step4.png" alt="이미지">
+                <video class="change" src="img/Step5.gif" alt="이미지">
+              </div>
+              <h3 class="">예약하기</h3>
+              <p class="p3 light_g3">#빌리지 #입장권</p>
+            </li>
 
-                    <li>
-                      <p class="step">step 2</p>
-                      <div class="">
-                        <img src="img/Step2.png" alt="">
-                        <div class="video_wrapper">
-                          <video class="change" src="img/Step5.gif" alt="">
-                        </div>
-                      </div>  
-                        <h3 class="">할인 &amp; 프로모션</h3>
-                        <p class="p3 light_g3">#카드할인 #EVENT</p>
-                    </li>
+            <li>
+              <p class="step">step 5</p>
+              <div class="position-relative">
+                <img src="img/Step5.png" alt="이미지">
+                <video class="change" src="img/Step5.gif" alt="이미지">
+              </div>
+              <h3 class="">오늘의 날씨</h3>
+              <p class="p3 light_g3">#실내수영장 #Today</p>
+            </li>
 
-                    <li>
-                      <p class="step">step 3</p>
-                      <div class="">
-                        <img src="img/Step3.png" alt="">
-                        <div class="video_wrapper">
-                          <video class="change" src="img/Step5.gif" alt="">
-                        </div>
-                      </div>  
-                        <h3 class="">준비물</h3>
-                        <p class="p3 light_g3">#대여서비스 #ITEM</p>
-                    </li>
+            <li>
+              <p class="step">step 6</p>
+              <div class="position-relative">
+                <img src="img/Step6.png" alt="이미지">
+                <video class="change" src="img/Step5.gif" alt="이미지">
+              </div>
+              <h3 class="">공지사항</h3>
+              <p class="p3 light_g3">#Notice #News</p>
+            </li>
 
-                    <li>
-                      <p class="step">step 4</p>
-                      <div class="">
-                        <img src="img/Step4.png" alt="">
-                        <div class="video_wrapper">
-                          <video class="change" src="img/Step5.gif" alt="">
-                        </div>
-                      </div>  
-                        <h3 class="">예약</h3>
-                        <p class="p3 light_g3">#빌리지 #입장권</p>
-                    </li>
-                
-                    
-            </ul>
 
-            </div>
-          </div>
-        </div>
+
+      </ul>
+    
 
     </section>
 
@@ -492,7 +497,7 @@
       </div>
     </section>
     
-    <section class="sec5 big_pd">
+    <section class="sec5 big_pd position-relative">
     
         <div class="container d-flex">
 
@@ -553,7 +558,7 @@
         </div><!-- container -->
   
 
-    <div class="bg_move_slider">
+    <div class="bg_move_slider position-absolute">
       <p>Carribian BAY Carribian BAY Carribian BAY</p>
       <p>Carribian BAY Carribian BAY Carribian BAY</p>
     </div>
@@ -569,40 +574,56 @@
       </div>
 
       <div class="d-flex flex-column align-items-center food_list">
-        <div class="d-flex">
-          <div>
+        <div class="d-flex align-items-center">
+          <div class="box">
             <img src="img/li_01.png" alt="이미지">
-            <p></p>
+            <p>지금 딱! 당 떨어지셨죠?? <br>
+              #비치사이드바 #풀바셋</p>
+              <a href=""></a>
           </div>
-          <div>
+          <div class="box">
             <img src="img/li_02.png" alt="이미지">
-            <p></p>
+            <p>해변에서 수제버거는 국룰이죠! <br>
+              #멜팅소울</p>
+              <a href=""></a>
           </div>
-          <div>
+          <div class="box">
             <img src="img/li_03.png" alt="이미지">
-            <p></p>
+            <p>캐비에서 먹는 브런치란? <br>
+              #라꼬스타</p>
+              <a href=""></a>
           </div>
-          <div>
+          <div class="box">
             <img src="img/li_04.png" alt="이미지">
-            <p></p>
+            <p>#퐁당치즈퐁듀 🫕 최고의 야심작...! <br>
+              #가든테라스 </p>
+              <a href=""></a>
           </div>
         </div>
-        <div class="d-flex flex-column align-items-center">
-          <div>
-            <img src="" alt="">
-            <p></p>
+        <div class="d-flex align-items-center">
+          <div class="box">
+            <img src="img/li_05.png" alt="이미지">
+            <p>꼬숩고 짭조름한 BBQ학센플레이트에 <br>
+              #클라우드 💯점</p>
+              <a href=""></a>
           </div>
-          <div>
-            <img src="" alt="">
-            <p></p>
+          <div class="box">
+            <img src="img/li_06.png" alt="이미지">
+            <p>말복 더위도 놀라서 도망간다는 조합 <br>
+               #치맥 #캐미</p>
+               <a href=""></a>
           </div>
-          <div>
-            <img src="" alt="">
-            <p></p>
+          <div class="box">
+            <img src="img/li_07.png" alt="이미지">
+            <p>타운즈마켓에서 뭘 먹을까?<br>
+              #매일매일 고민</p>
+              <a href=""></a>
           </div>
-          <div>
-            <img src="" alt="">
-            <p></p>
+          <div class="box">
+            <img src="img/li_08.png" alt="이미지">
+            <p>캐비의 여름밤을 200% 즐기러 <br>
+              #썸머피치나이트</p>
+              <a href=""></a>
           </div>
         </div>
       </div>
@@ -612,58 +633,50 @@
 
     <section class="sec7 big_pd">
       <div class="d-flex justify-content-around container">
-        <div class="stock"></div>
-        <div class="today">
-          <h2 class="tt light_g1 sm_pd">today</h2>
-          <p class="pd">10월 10일 (테스트)</p>
-          <p class="pd">실내 <span class="mt">10:00 - 17:00</span></p>
-          <p class="pd">실외 <span class="mt">10:00 - 17:00</span></p>
-          <div class="nbtn d-flex align-self-center">
-            <a href="">더 많은 Photo 리뷰 보기</a>
-          </div>
-        </div>
+
+       
         <div class="news">
           
           <table class="table">
             <thead>
               <tr>
                 <th colspan="2" class="tt light_g1 sm_pd">NEWS & NOTICE</th>
-                <th scope="col">자세히보기</th>
+                <th scope="col" class="nplus">+</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <th scope="row">1</th>
+                <th scope="row">+</th>
                 <td>Who's the Captain</td>
                 <td>2023-07-14</td>
               </tr>
               <tr>
-                <th scope="row">2</th>
+                <th scope="row">+</th>
                 <td>모코코 해적단 in 캐리비안 베이</td>
                 <td>2023-07-13</td>
               </tr>
               <tr>
-                <th scope="row">3</th>
+                <th scope="row">+</th>
                 <td>더 이상의 기다림은 없다! 캐비투어 OPEN the Bird</td>
                 <td>2023-07-12</td>
               </tr>
               <tr>
-                <th scope="row">4</th>
+                <th scope="row">+</th>
                 <td>여름을 제대로 즐기는 방법? 시원한 여름 선물 받자!</td>
                 <td>2023-07-11</td>
               </tr>
               <tr>
-                <th scope="row">5</th>
+                <th scope="row">+</th>
                 <td>23년 시즌 캘린더 안내</td>
                 <td>2023-07-10</td>
               </tr>
               <tr>
-                <th scope="row">6</th>
+                <th scope="row">+</th>
                 <td>23년 시즌 캘린더 안내</td>
                 <td>2023-07-10</td>
               </tr>
               <tr>
-                <th scope="row">7</th>
+                <th scope="row">+</th>
                 <td>23년 시즌 캘린더 안내</td>
                 <td>2023-07-10</td>
               </tr>
@@ -674,6 +687,16 @@
 
         </div><!-- news -->
 
+        <div class="today">
+          <h2 class="tt light_g1 ">today</h2>
+          <h3 class="st pd light_g2">오늘의 운영 시간</h3>
+          <p class="p1 pd">10월 10일 (테스트)</p>
+          <p class="">실내 <span class="mt">10:00 - 17:00</span></p>
+          <p class="pd">실외 <span class="mt">10:00 - 17:00</span></p>
+          <div class="nbtn d-flex align-self-center">
+            <a href="">더 많은 Photo 리뷰 보기</a>
+          </div>
+        </div>
 
       </div><!-- sec7 -->
 
