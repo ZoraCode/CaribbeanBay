@@ -15,8 +15,8 @@ header .top_menu h1 a{
   background: url(../img/Logo.png)no-repeat;
   text-indent: -1000em;
   display: block;
-  width: 189px;
-  height: 62px;
+  width: 209px;
+  height: 36px;
 }
 header legend{
   display: none;
@@ -91,6 +91,7 @@ header .bottom_menu.sticky{
 }
 .sec1 .sec1_img{
   width: 100%;
+  background-size:cover;
 }
 
 .sec1_video_slide {
@@ -107,11 +108,15 @@ header .bottom_menu.sticky{
 .sec1_fullbg {
   position: absolute;
 }
-.sec1 .nbtn{
-  color: var(--white);
+.sec1 .lik{
+  padding: 10px 40px;
   border: 2px solid var(--white);
+  display: block;
+  color: var(--white);
+  box-shadow: 0px 0px 20px rgba(255,72,227,.35);
+  text-shadow: 0px 0px 10px #c55098;
 }
-.sec1 .nbtn:hover{
+.sec1 .lik:hover{
   background-color: var(--white);
   color: var(--navy);
 }
@@ -131,13 +136,13 @@ header .bottom_menu.sticky{
   font-family: 'RixYeoljeongdo_Regular';
   text-transform: uppercase;
   white-space: nowrap;
-  text-shadow: 0px 0px 10px #9E00FF;
+  text-shadow: 0px 0px 10px #c55098;
   font-size: 80px; 
   line-height: 100px;
 }
 .sec1_text h4{
   font-family: 'RixYeoljeongdo_Regular';
-  text-shadow: 0px 0px 10px #9E00FF;
+  text-shadow: 0px 0px 10px #c55098;
   font-size: 55px; 
 }
 .sec1_text p{
@@ -165,12 +170,13 @@ header .bottom_menu.sticky{
   border-radius: 10px; 
 }  
 .sec1_prev, .sec1_next {
-  cursor: pointer; 
+  /* cursor: pointer; 
   position: relative;
   padding: 3px; 
   bottom: 15px;
-  z-index: 1;
-  /* display: none; */
+  z-index: 1; */
+
+  display: none;
 }
 .sec1_controls {
   position: absolute; 
@@ -454,7 +460,10 @@ header .bottom_menu.sticky{
   color: var(--white);
   border: 1px var(--white) solid;
 }
-
+.sec7 .mainVideo .linkeve:hover{
+  color: var(--light_g1);
+  background-color: var(--white);
+}
 
 
 
@@ -474,6 +483,9 @@ header .bottom_menu.sticky{
 .sec8 .today .nbtn{
   background: var(--sub_color2);
   color: var(--white);
+}
+.sec8 .today .nbtn:hover{
+  background: var(--sub_color3);
 }
 .sec8 .today .nbtn a{
 transform: translateY(2px);
