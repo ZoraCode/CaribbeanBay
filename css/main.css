@@ -92,14 +92,7 @@ header .bottom_menu.sticky{
 .sec1 .sec1_img{
   width: 100%;
 }
-.sec1 .sec1_ob{
-  width: 100%;
-  position: absolute;
-  z-index: 2;
-  bottom: -100px;
-  left: 0;
-  right: 0;
-}
+
 .sec1_video_slide {
   height: 100%; 
   overflow: hidden; 
@@ -116,7 +109,7 @@ header .bottom_menu.sticky{
 }
 .sec1 .nbtn{
   color: var(--white);
-  border: 1px solid var(--white);
+  border: 2px solid var(--white);
 }
 .sec1 .nbtn:hover{
   background-color: var(--white);
@@ -130,16 +123,32 @@ header .bottom_menu.sticky{
   position: absolute; 
   z-index: 5;
   left: 50%; 
-  bottom: 30%; 
+  bottom: 20%; 
   transform: translateX(-50%);
+  gap: 0 calc(var(--padding)*2);
 }
 .sec1_text h3 {
+  font-family: 'RixYeoljeongdo_Regular';
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-shadow: 0px 0px 10px #9E00FF;
   font-size: 80px; 
-  font-weight: 700;
+  line-height: 100px;
 }
-.sec1_text p {
-  font-size: 24px; 
-  padding: 30px 0 42px;
+.sec1_text h4{
+  font-family: 'RixYeoljeongdo_Regular';
+  text-shadow: 0px 0px 10px #9E00FF;
+  font-size: 55px; 
+}
+.sec1_text p{
+  text-shadow: 0px 0px 10px #c55098;
+}
+.sec1_text .mj{
+  border: 10px solid rgba(255,255,255,.5);
+  box-shadow: 0 0 100px rgba(255,72,227,.58) ;
+}
+.sec1_text .tj{
+  transform: translate(-200px , 200px);
 }
 .sec1_text .nbtn a {
   font-size: 16px;
@@ -147,7 +156,7 @@ header .bottom_menu.sticky{
 .swiper-scrollbar.swiper-horizontal>.swiper-scrollbar,
 .swiper-scrollbar.swiper-scrollbar-horizontal {
   width: 400px; 
-  height: 15px;
+  height: 5px;
   position: static;
   font-size: 30px;
 }
@@ -156,18 +165,18 @@ header .bottom_menu.sticky{
   border-radius: 10px; 
 }  
 .sec1_prev, .sec1_next {
-  /* cursor: pointer; 
-  position: relative; 
-  left:0; 
-  bottom:0;
-  z-index: 1; */
-  display: none;
+  cursor: pointer; 
+  position: relative;
+  padding: 3px; 
+  bottom: 15px;
+  z-index: 1;
+  /* display: none; */
 }
 .sec1_controls {
   position: absolute; 
   display: flex;
-  bottom: 50px; 
-  right: 20%;
+  bottom: 30px; 
+  right: 10%;
 }
 
 
@@ -266,9 +275,15 @@ header .bottom_menu.sticky{
   background-color: var(--navy);
   color: var(--white);
 }
+.sec4 form .other:hover{
+  background-color: var(--sub_color3);
+}
 .sec4 form .look{
   background-color: var(--sub_color2);
   color: var(--white);
+}
+.sec4 form .look:hover{
+  background-color: var(--sub_color3);
 }
 .sec4 form .other a,
 .sec4 form .look a{
@@ -290,6 +305,9 @@ header .bottom_menu.sticky{
 .sec5 .Sec5_left .event{
   background-color: var(--sub_color2);
   color: var(--white);
+}
+.sec5 .Sec5_left .event:hover{
+  background-color: var(--sub_color3);
 }
 .sec5 .Sec5_left .event a{
   display: block;
@@ -408,33 +426,79 @@ header .bottom_menu.sticky{
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 42.71%, rgba(0, 0, 0, 0.80) 100%);
 }
 
+
 /* sec7 */
 
 .sec7{
+  height: 550px;
+  background:url(https://mfhaoswulcnn3822236.cdn.ntruss.com/data/barrel_data/images/banner/5828/joyjoy.jpg) no-repeat  center 0;
+  background-size:cover;
+  margin-bottom: calc(var(--padding)*5);
+}
+.sec7 .mainVideo{
+  padding-top: calc(var(--padding)*3);
+  gap: calc(var(--padding)*2);
+}
+.sec7 .mainVideo h3{
+  color: var(--white);
+  font-size: 40px;
+}
+.sec7 .mainVideo p{
+  color: var(--white);
+  line-height: 35px;
+  font-weight: lighter;
+}
+.sec7 .mainVideo .linkeve{
+  display: inline-block;
+  padding: 10px 25px;
+  color: var(--white);
+  border: 1px var(--white) solid;
+}
+
+
+
+
+
+
+
+
+/* sec8 */
+
+.sec8{
   margin: 0 auto;
 }
-.sec7 .today{
+.sec8 .today{
   text-align: center;
   text-transform: uppercase;
 }
-.sec7 .today .nbtn{
+.sec8 .today .nbtn{
   background: var(--sub_color2);
   color: var(--white);
 }
-.sec7 .today .nbtn a{
+.sec8 .today .nbtn a{
 transform: translateY(2px);
 }
-.sec7 .today span{
+.sec8 .today span{
   color: var(--sub_color1);
 }
-.sec7 .news .nplus{
+.sec8 .news .nplus{
   font-size: 30px;
   text-align: end;
 }
-.sec7 .news .table thead{
+.sec8 .news .nplus i:hover{
+  transform: rotate(180deg);
+  transition: .5s;
+}
+.sec8 .news .table tbody i{
+  font-size: 10px;
+}
+.sec8 .news .table tbody i:hover{
+  opacity: 0;
+}
+.sec8 .news .table thead{
   line-height: 90px;
 }
-.sec7 .news .table tbody tr{
+.sec8 .news .table tbody tr{
   line-height: 30px;
   font-size: 20px;
 }
