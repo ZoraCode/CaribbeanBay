@@ -126,7 +126,7 @@ $('.sec2_slides').slick({
 // sec3
 
 const sec3swiper = new Swiper('.sec3ab', {
-  slidesPerView: 7,
+  slidesPerView: 6,
   
   direction: 'horizontal',
   loop: true,
