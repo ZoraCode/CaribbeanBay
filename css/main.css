@@ -5,6 +5,7 @@ header{
   height: 150px;
   z-index: 9999;
   position: relative;
+  box-shadow: 0px 0px 20px rgba(255,72,227,.35);
 }
 header .top_menu{
   position: relative;
@@ -27,8 +28,11 @@ header legend #keyword{
 header .top_menu .open_search{
   width: 600px;
   height: 45px;
-  background-color: #F7F8F9;
   border-radius: 5px;
+  border: 2px solid rgba(221, 221, 221, 0.50);
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.40) 4.29%, rgba(255, 255, 255, 0.40) 95.6%), #FFF;
+  background-blend-mode: soft-light, normal;
+  box-shadow: 5px 5px 5px 0px rgba(166, 171, 189, 0.20) inset, -9px -9px 16px 0px rgba(250, 251, 255, 0.50) inset;
 }
 header .top_menu .open_search .fa-solid{
   color: var(--light_g3);
@@ -56,6 +60,7 @@ header .bottom_menu{
   overflow: hidden;
   height: 60px;
   position: absolute;
+  box-shadow: 5px 5px 5px rgba(185, 185, 185, 0.35);
 }
 header .bottom_menu .bottom_list{
   height: 61px;
@@ -280,11 +285,30 @@ body{
 .sec3 .blist .nbtn a{
   display: block;
 }
+.sec3 .sizeCt{
+  padding-top: calc(var(--padding)*.5);
+  padding-bottom: calc(var(--padding)*.5);
+}
 .sec3 .sizeCt img{
   width: 300px;
   height: 300px;
 }
-
+.sec3 .sizeCt img:hover{
+  box-shadow: 0px 0px 15px hsl(323, 85%, 68%, .35);
+  cursor: pointer;
+}
+.sec3 h3::before{
+  content: '- ';
+}
+.sec3 h3::after{
+  content: ' -';
+}
+.sec3 li.swiper-slide{
+  text-align: center;
+}
+.sec3 li.swiper h3{
+  font-size: 20px;
+}
 /* sec4 */
 
 
@@ -431,6 +455,7 @@ body{
 .sec6{
   background: linear-gradient(180deg, #E1F1F2 0%, rgba(217, 217, 217, 0.00) 100%);
   padding-top: calc(var(--padding)*2);
+  z-index: -1;
 }
 
 .sec6 .title{
@@ -556,4 +581,41 @@ transform: translateY(2px);
 .sec8 .news .table tbody tr{
   line-height: 30px;
   font-size: 20px;
+  cursor: pointer;
+}
+
+/* footer */
+
+footer{
+  padding: calc(var(--padding)*3);
+  border: 2px solid var(--shadow20, rgba(255, 255, 255, 0.40));
+  background: var(--shadow-20, linear-gradient(135deg, rgba(0, 0, 0, 0.40) 0%, rgba(255, 255, 255, 0.40) 100%), #EBECF0);
+  background-blend-mode: soft-light, normal;
+  box-shadow: 24px 24px 48px 0px #A6ABBD, -24px -24px 48px 0px #FAFBFF;
+}
+footer .footer_wrap{
+  margin: 0 auto;
+  gap: 0 60px;
+}
+footer .footer_content a + a{
+  padding-left: calc(var(--padding)*.5);
+}
+footer .footer_content a:hover{
+  color: var(--sub_color1);
+}
+footer form{
+  padding: 0px 15px;
+  width: 500px;
+  border: 1px solid var(--light_g3);
+  margin-bottom: calc(var(--padding)*1);
+}
+footer form input{
+  border-right: 1px solid var(--light_g3);
+  width: 75%;
+}
+footer form button a{
+  display: block;
+}
+footer form button a:hover{
+  color: var(--sub_color1);
 }
