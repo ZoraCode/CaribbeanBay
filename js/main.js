@@ -43,7 +43,6 @@ window.addEventListener('scroll',()=>{
       header.classList.remove('sticky');
   }
 });
-/* header_성진영(종료) */
 
 
 // sec1

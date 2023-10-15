@@ -24,86 +24,100 @@
   <title>캐리비안베이</title>  
 </head>
 <body>    
-<header></header>
-</header>
+  <header>
+    <div class="top_menu container d-flex justify-content-between align-items-center">
+     
+        <h1 class="center_logo">
+          <a href="#">로고</a>
+        </h1>
+        
+        <!-- Search -->
+				<form id="" name="" action="../" method="get" target="" enctype="multipart/form-data" >
+          <input id="banner_action" name="banner_action" value="" type="hidden"/>
+          
+          <div class="">
+          <fieldset>
+            
+          <legend>검색</legend>
+            <div class="">
+              <div class="open_search d-flex position-relative" onclick="">
+                <i class="fa-solid fa-magnifying-glass position-absolute"></i>
+                <input id="keyword" name="keyword" fw-filter="" fw-label="검색어" fw-msg="" placeholder="무엇을 찾고 계신가요? " autocomplete="off" value="" type="text"/>
+              </div> 
+            </div>
+          </fieldset>
+
+          </div>
+        </form>			
+        <!-- Search -->
+        
+        
+        <ul class="d-flex icon">
+          <li><img src="img/Sun.svg" alt=""></li>
+          <li>
+            <form action="" id="clbt">
+              <input type="checkbox" id="wifi">  
+              <label for="wifi" class="lab">wifi</label>
+            </form>
+          </li>
+          <li><img src="img/Night.svg" alt=""></li>
+        </ul>
+
+        <ul class="d-flex icon">
+          <li><a href=""><img src="img/Login.svg" alt=""></a></li>
+          <li><a href=""><img src="img/Menu.svg" alt=""></a></li>
+          <li><a href=""><img src="img/Talk.svg" alt=""></a></li>
+        </ul>
+
+      </div>
+    </div>
+    
+    <nav class="bottom_menu">
+      <div class="bottom_list">
+        <ul class="menu_list container d-flex justify-content-center p2">
+          <li><a href="">이용정보</a>
+            <ul>
+              <li><a data-text="About Us" href="">이용방법</a></li>
+              <li><a data-text="About Us" href="">운영시간</a></li>
+              <li><a data-text="About Us" href="">편의시설</a></li>
+              <li><a data-text="About Us" href="">교통정보</a></li>
+            </ul>
+          </li>
+          <li><a href="">요금 & 프로모션</a>
+            <ul>
+              <li><a href="">이벤트</a></li>
+              <li><a href="">이용요금</a></li>
+              <li><a href="">제휴카드</a></li>
+            </ul>
+          </li>
+          <li><a href="">어트랙션</a>
+            <ul>
+              <li><a href="">어트랙션</a></li>
+              <li><a href="">가이드맵</a></li>
+              <li><a href="">주의사항</a></li>
+            </ul></li>
+          <li><a href="">캐리비안베이 즐기기</a>
+            <ul>
+              <li><a href="">레스토랑</a></li>
+              <li><a href="">빌리지</a></li>
+              <li><a href="">예약</a></li>
+              <li><a href="">공지사항</a></li>
+            </ul>
+          </li>
+          <li><a href="">커뮤니티</a>
+            <ul>
+              <li><a href="">문의 상담</a></li>
+              <li><a href="">카카오톡</a></li>
+            </ul>
+          </li>       
+        </ul>
+      </div>
+    </nav>
+
+  </header>
+
+
 <main>
-  <section class="video_screen">
-    <div></div>
-  </section>
-
-
-
-  <div class="action-bar d-flex justify-content-between align-items-center">
-
-    <!-- 브래드크럼 -->
-    <div class="breadcrumb d-flex align-items-center  container">
-      <ul>
-        <li><a href="#"><i class="fa-solid fa-house"></i></a></li>
-        <li><a href="#">카테고리</a></li>
-        <li><a href="#">이용정보</a></li>
-        <li>편의시설</li>
-      </ul>
-    </div>
-
-
-    <!-- 공유,인쇄 버튼 -->
-
-    <div class="button_area d-flex flex-row">
-
-      <!-- 공유하기  -->
-
-      <div class="share">
-        <div>
-          <button id="copyButton" type="button" class="image-button">
-            <img src="../img/share.png" alt="공유하기 버튼">
-          </button>
-
-          <!-- JavaScript -->
-
-          <script>
-            const copyButton = document.getElementById("copyButton");
-
-            copyButton.addEventListener("click", () => {
-              // 현재 페이지의 URL 가져오기
-              const currentPageURL = window.location.href;
-
-              // 임시 input 요소를 만들어 URL 복사
-              const tempInput = document.createElement("input");
-              tempInput.value = currentPageURL;
-              document.body.appendChild(tempInput);
-              tempInput.select();
-              document.execCommand("copy");
-              document.body.removeChild(tempInput);
-
-              // 복사 완료 메시지 또는 상태 표시
-              alert("현재 페이지의 링크가 복사되었습니다.");
-            });
-          </script>
-        </div>
-
-      </div>
-
-      <!-- 인쇄하기 버튼 -->
-      <div class="print">
-        <button id="printButton" type="button" class="image-button">
-          <img src="../img/print.png" alt="이미지">
-        </button>
-
-
-        <script>
-          const printButton = document.getElementById("printButton");
-
-          printButton.addEventListener("click", () => {
-            // 페이지 인쇄
-            window.print();
-          });
-        </script>
-      </div>
-    </div>
-  </div>
-
-
-
 
 <section class="container text-center">
       
@@ -265,7 +279,46 @@
       
        
 </main>
-<footer></footer>
+
+
+<footer class="d-flex ">
+
+  <div class="footer_wrap d-flex justify-content-center container">
+
+    <a class="footer_logo align-self-center" href="index.html">
+      <img src="img/Logo.png" alt="캐리비안베이 로고">
+    </a>
+
+    <div class='footer-link d-flex flex-column '>
+     
+      <form class="p2">
+        <input id="usermail" name="usermail" placeholder="Enter your email here" autocomplete="off" value="" type="email"/>
+        <button><a href="" class="text-uppercase light_g2">Subscribe</a></button>
+      </form>
+      
+      <div class="footer_content p1 light_g2 pd">
+        <a href="">에버랜드 리조트 소개</a>
+        <a href="">이용약관</a>
+        <a href="">이메일주소 무단수집 거부 </a>
+        <a href="">CAST참여</a>
+        <a href="">사이트맵</a>
+      </div>
+
+      <address class="p2 light_g2 pd">경기도 용인시 처인구 포곡읍 에버랜드로 199 삼성물산(주)
+        <br>대표이사 : 정해린 | 사업자등록번호 : 135-85-04288 | 통신판매업 신고번호 : 제2006-용인처인-0216호
+        <br>사업자정보확인▶ 손님상담센터 : 031-320-5000(유료) | 개인정보처리방침 | 방침 개정 안내 | 입찰공고
+        
+      </address>
+
+      <p class="copyright p1">Copyright &copy; Samsung C&T Corporation. All rights reserved. </p>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
 <script src="../js/service.js"></script>
 </body>
 </html>
