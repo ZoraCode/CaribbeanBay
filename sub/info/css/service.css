@@ -1,8 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
-@import url('https://webfontworld.github.io/gmarket/GmarketSans.css');
-@import url('https://webfontworld.github.io/SCoreDream/SCoreDream.css');
-@import url(../../../css/reset.css);
-
 
 /* header */
 
@@ -65,7 +60,6 @@ header .top_menu .icon a{
   display: block;
 }
 
-/*  */
 header #clbt{
   width: 70px;
 }
@@ -95,11 +89,7 @@ header label:after{
   box-shadow: 5px 5px 5px 5px rgba(79, 85, 100, 0.2) inset;
   transition:0.2s ease-in;
 }
-/*
-0.4s 초반이 느린속도
-label 96E7EF
-원형  1d6269
-*/
+
 header #wifi {
   display: none;
 }
@@ -111,8 +101,6 @@ header #wifi:checked + label:after{
   background: var(--white);
   left: 40px;
 }
-
-/*  */
 
 
 
@@ -160,15 +148,6 @@ header .bottom_menu.sticky{
   top:0;
 }
 
-
-
-
-h1,h2,h3,h4,h5,h6 {
-  font-family: var(--Gmaket_Sans);
-}
-body,p,span{
-  font-family: var(--Score_dream);
-}
 
 
 .video_screen{
