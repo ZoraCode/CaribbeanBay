@@ -92,11 +92,7 @@ header label:after{
   box-shadow: 5px 5px 5px 5px rgba(79, 85, 100, 0.2) inset;
   transition:0.2s ease-in;
 }
-/*
-0.4s 초반이 느린속도
-label 96E7EF
-원형  1d6269
-*/
+
 header #wifi {
   display: none;
 }
@@ -108,8 +104,6 @@ header #wifi:checked + label:after{
   background: var(--white);
   left: 40px;
 }
-
-/*  */
 
 
 
