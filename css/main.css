@@ -1,7 +1,7 @@
 /* header */
 
 header{
-  background: #f7f7f7;
+  background: #fff;
   height: 150px;
   z-index: 9999;
   position: relative;
@@ -53,7 +53,7 @@ header .top_menu .open_search input::placeholder{
 }
 
 header .top_menu .icon{
-  gap: 15px;
+  gap: 5px;
 }
 header .top_menu .icon a{
   display: block;
@@ -112,7 +112,7 @@ header #wifi:checked + label:after{
 
 header .bottom_menu{
   width: 100%;
-  background:linear-gradient( #f7f7f7 60px,rgba(255,255,255,.8) 60px);
+  background:linear-gradient( #fff 60px,rgba(255,255,255,.8) 60px);
   transition: 0.3s;  
   overflow: hidden;
   height: 60px;

@@ -1,31 +1,25 @@
-<svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_di_86_145)">
-<path d="M19.126 6C14.158 6 10.126 10.032 10.126 15C10.126 19.968 14.158 24 19.126 24C24.094 24 28.126 19.968 28.126 15C28.126 10.032 24.094 6 19.126 6ZM19.126 21.3C15.643 21.3 12.826 18.483 12.826 15C12.826 11.517 15.643 8.7 19.126 8.7C22.609 8.7 25.426 11.517 25.426 15C25.426 18.483 22.609 21.3 19.126 21.3Z" fill="#A1A1A1"/>
-<path d="M19 0L21.5981 4.5H16.4019L19 0Z" fill="#A1A1A1"/>
-<path d="M9.12132 3.62132L14.1404 4.96619L10.4662 8.64042L9.12132 3.62132Z" fill="#A1A1A1"/>
-<path d="M4 15L8.5 12.4019L8.5 17.5981L4 15Z" fill="#A1A1A1"/>
-<path d="M7.62136 25.864L8.96622 20.8449L12.6405 24.5191L7.62136 25.864Z" fill="#A1A1A1"/>
-<path d="M29.864 3.62132L28.5191 8.64042L24.8449 4.96618L29.864 3.62132Z" fill="#A1A1A1"/>
-<path d="M34 15L29.5 17.5981L29.5 12.4019L34 15Z" fill="#A1A1A1"/>
-<path d="M19 30L16.4019 25.5L21.5981 25.5L19 30Z" fill="#A1A1A1"/>
-<path d="M29.864 25.864L24.8449 24.5191L28.5192 20.8449L29.864 25.864Z" fill="#A1A1A1"/>
+<svg width="39" height="38" viewBox="0 0 39 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_106_26)">
+<path d="M19.6758 6C14.7078 6 10.6758 10.032 10.6758 15C10.6758 19.968 14.7078 24 19.6758 24C24.6438 24 28.6758 19.968 28.6758 15C28.6758 10.032 24.6438 6 19.6758 6ZM19.6758 21.3C16.1928 21.3 13.3758 18.483 13.3758 15C13.3758 11.517 16.1928 8.7 19.6758 8.7C23.1588 8.7 25.9758 11.517 25.9758 15C25.9758 18.483 23.1588 21.3 19.6758 21.3Z" fill="#A1A1A1"/>
+<path d="M19.5498 0L22.1479 4.5H16.9517L19.5498 0Z" fill="#A1A1A1"/>
+<path d="M9.67112 3.62136L14.6902 4.96622L11.016 8.64045L9.67112 3.62136Z" fill="#A1A1A1"/>
+<path d="M4.5498 15L9.0498 12.4019L9.0498 17.5981L4.5498 15Z" fill="#A1A1A1"/>
+<path d="M8.17116 25.864L9.51602 20.8449L13.1903 24.5192L8.17116 25.864Z" fill="#A1A1A1"/>
+<path d="M30.4138 3.62132L29.0689 8.64042L25.3947 4.96618L30.4138 3.62132Z" fill="#A1A1A1"/>
+<path d="M34.5498 15L30.0498 17.5981L30.0498 12.4019L34.5498 15Z" fill="#A1A1A1"/>
+<path d="M19.5498 30L16.9517 25.5L22.1479 25.5L19.5498 30Z" fill="#A1A1A1"/>
+<path d="M30.4138 25.864L25.3947 24.5191L29.069 20.8449L30.4138 25.864Z" fill="#A1A1A1"/>
 </g>
 <defs>
-<filter id="filter0_di_86_145" x="0" y="0" width="39" height="38" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_d_106_26" x="0.549805" y="0" width="38" height="38" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dy="4"/>
 <feGaussianBlur stdDeviation="2"/>
 <feComposite in2="hardAlpha" operator="out"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_86_145"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_86_145" result="shape"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset dx="5" dy="5"/>
-<feGaussianBlur stdDeviation="4.5"/>
-<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
 <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
-<feBlend mode="normal" in2="shape" result="effect2_innerShadow_86_145"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_106_26"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_106_26" result="shape"/>
 </filter>
 </defs>
 </svg>
