@@ -382,12 +382,10 @@ body{
   padding-bottom: calc(var(--padding)*.5);
 }
 .sec3 .sizeCt img{
-  width: 300px;
-  height: 300px;
-  position: relative;
+  border-radius: 10px 0 10px 0;
 }
 .sec3 .sizeCt img:hover{
-  box-shadow: 0px 0px 15px hsl(323, 85%, 68%, .35);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.20);
   cursor: pointer;
 }
 .sec3 h3{
