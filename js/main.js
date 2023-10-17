@@ -106,7 +106,7 @@ $(function(){
       slideWidth: 800,
       slideMargin: 10,
       ticker: true,
-      speed: 50000,
+      speed: 100000,
     });
   });
 
@@ -135,7 +135,12 @@ const sec3swiper = new Swiper('.sec3ab', {
 
  });
 
-
+ $('.slidebtn a').click(function(e){
+  e.preventDefault();
+  let target = $(this).attr('data-index');
+  sec3swiper.slideTo(target);
+ });
+//  sec3swiper.slideTo(6);
 
 
   // sc4
@@ -144,8 +149,8 @@ const sec3swiper = new Swiper('.sec3ab', {
 
 
   // sec5
-
-  $(function () {
+  $('.slider_box').imagesLoaded( function() {
+    // images have loaded
     $(".sec5_slider1").bxSlider({
       mode: 'vertical',
       ticker: true,
@@ -153,11 +158,11 @@ const sec3swiper = new Swiper('.sec3ab', {
       slideMargin: 15,
       minSlides: 3,
       maxSlides: 3,
-      speed: 50000
+      speed: 80000,
+      autoDirection: 'prev'
     });
-  });
-
-  $(function () {
+  
+  
     $(".sec5_slider2").bxSlider({
       mode: 'vertical',
       ticker: true,
@@ -165,6 +170,8 @@ const sec3swiper = new Swiper('.sec3ab', {
       slideMargin: 15,
       minSlides: 3,
       maxSlides: 3,
-      speed: 50000
+      speed: 80000
     });
   });
+
+
