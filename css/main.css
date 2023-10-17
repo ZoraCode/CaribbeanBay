@@ -152,9 +152,7 @@ header .bottom_menu.sticky{
   top:0;
 }
 /* body */
-body{
 
-}
 /* sec1 */
 
 .sec1 {
@@ -184,19 +182,16 @@ body{
 }
 .sec1 .lik{
   padding: 10px 40px;
-  border: 2px solid var(--white);
+  border: 1.5px solid var(--white);
   display: block;
   color: var(--white);
-  /* box-shadow: 0px 0px 20px rgba(255,72,227,.35); */
-  /* text-shadow: 0px 0px 10px #c55098; */
 }
 .sec1 .lik.lpnk{
   padding: 10px 40px;
-  border: 1px solid  #5C104D;
+  font-weight: normal;
+  border: 1.5px solid  #5C104D;
   display: block;
   color:  #5C104D;
-  /* box-shadow: 0px 0px 20px rgba(255,72,227,.35); */
-  /* text-shadow: 0px 0px 10px #c55098; */
 }
 .sec1 .lik:hover{
   background-color: var(--white);
@@ -215,8 +210,9 @@ body{
   font-family: 'RixYeoljeongdo_Regular';
   text-transform: uppercase;
   white-space: nowrap;
-  text-shadow: 0px 0px 5px #f3ffd2;
+  text-shadow: 0px 0px 15px rgba(246, 255, 193, 0.35);
   font-size: 80px; 
+  -webkit-text-stroke: .5px #fbffca;
   line-height: 100px;
 }
 .sec1_text h3.ti3{
@@ -224,9 +220,8 @@ body{
   text-transform: uppercase;
   white-space: nowrap;
   color: rgba(0, 1, 63, 0.8);
-  text-shadow: 0px 0px 20px rgba(241, 255, 114, 0.35);
-  font-size: 80px; 
-  line-height: 100px;
+  text-shadow: 0px 0px 5px rgba(130, 0, 252, 0.9);
+  font-size: 100px; 
   -webkit-text-stroke: .5px #00eaff;
 }
 .sec1_text .pnk{
@@ -331,7 +326,7 @@ body{
 }
 
 .sec2 li:nth-child(2n){
-  transform: translateY(15px);
+  transform: translateY(10px);
 }
 .sec2 li:hover{
   opacity: .7;
@@ -343,9 +338,8 @@ body{
 }
 /* sec3 */
 .sec3{
-  background: linear-gradient(180deg, #F7F7F7 0%, rgba(217, 217, 217, 0.00) 100%);
-  padding-top: calc(var(--padding)*2);
-  /* margin-bottom: calc(var(--padding)*5); */
+  background: linear-gradient(180deg, #fcffec 0%, rgba(217, 217, 217, 0.00) 100%);
+  padding-top: calc(var(--padding)*5);
 }
 .sec3 .stfont{
   left: 50%;
@@ -353,8 +347,8 @@ body{
   transform: translate(-50%);
   font-size: 45px;
   white-space: nowrap;
-  color: #e27328;
-  z-index: -2;
+  color: var(--sub_color3);
+  z-index: -1;
 }
 
 .sec3 .title p,
@@ -381,11 +375,7 @@ body{
   padding-top: calc(var(--padding)*.5);
   padding-bottom: calc(var(--padding)*.5);
 }
-.sec3 .sizeCt img{
-  border-radius: 10px 0 10px 0;
-}
 .sec3 .sizeCt img:hover{
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.20);
   cursor: pointer;
 }
 .sec3 h3{
@@ -416,7 +406,7 @@ body{
   top: 0; bottom: 0; left: 0; right: 0;
   width: 100%;
   text-indent: -9999em;
-  background: linear-gradient(270deg, rgba(229, 203, 238, 0.83) 0.19%, rgba(252, 207, 204, 0.40) 17.83%, rgba(217, 217, 217, 0.00) 49.67%, rgba(220, 204, 240, 0.30) 77.11%, rgba(193, 220, 247, 0.46) 99.18%);
+  background: linear-gradient(270deg, rgba(229, 203, 238, 0.8) 0%, rgba(252, 207, 204, 0.4) 15%, rgba(255, 255, 255, 0) 50%, rgba(220, 204, 240, 0.40) 75%, rgba(193, 220, 247, 0.5) 100%);
   filter: blur(15px);
   z-index: -5;
 }
@@ -625,7 +615,7 @@ body{
   height: 550px;
   background:url(https://mfhaoswulcnn3822236.cdn.ntruss.com/data/barrel_data/images/banner/5828/joyjoy.jpg) no-repeat  center 0;
   background-size:cover;
-  margin-bottom: calc(var(--padding)*5);
+  /* margin-bottom: calc(var(--padding)*5); */
 }
 .sec7 .mainVideo{
   padding-top: calc(var(--padding)*3);
@@ -709,9 +699,6 @@ transform: translateY(2px);
 
 footer{
   padding: calc(var(--padding)*2);
-  border: 2px solid var(rgba(255, 255, 255, 0.40));
-  background: var(linear-gradient(135deg, rgba(0, 0, 0, 0.40) 0%, rgba(255, 255, 255, 0.40) 100%), #EBECF0);
-  background-blend-mode: soft-light, normal;
   box-shadow: 24px 24px 48px 0px #A6ABBD, -24px -24px 48px 0px #FAFBFF;
 }
 footer .footer_wrap{
@@ -745,3 +732,10 @@ footer form button a{
 footer form button a:hover{
   color: var(--sub_color1);
 }
+
+
+
+
+
+/* 1320px */
+
