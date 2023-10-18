@@ -45,6 +45,12 @@ window.addEventListener('scroll',()=>{
 });
 
 
+
+
+
+
+
+
 // sec1
 
 $(function(){
@@ -104,7 +110,7 @@ $(function(){
       minSlides: 3,
       maxSlides: 6,
       slideWidth: 800,
-      slideMargin: 10,
+      slideMargin: 15,
       ticker: true,
       speed: 100000,
     });
@@ -119,6 +125,7 @@ $('.sec2_slides').slick({
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 3000,
+  slideMargin: 15,
   arrows: false
 });
 

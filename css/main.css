@@ -415,6 +415,10 @@ header .bottom_menu.sticky{
 .sec4 form div:nth-child(2){
   gap: calc(var(--padding)*0.5);
 }
+.sec4 form div:first-child .mt,
+.sec4 form div:nth-child(2) .mt{
+  padding-bottom: 0;
+}
 
 .sec4 form #choice,
 .sec4 form #out{
@@ -735,9 +739,7 @@ footer form button a:hover{
     width: 100%;
   }
 
-  header .top_menu .open_search{
-    width: 100%;
-  }
+
 
   header .top_menu .icon{
     width: 123px;
@@ -773,14 +775,99 @@ footer form button a:hover{
   .sec3 .blist ul{
     gap: 10px;
   }
-  .sec3 .blist .nbtn{
-    /* padding: 8px 25px; */
+  header .top_menu .open_search{
+    width: 400px;
   }
   .sec3 .blist ul li a{
     font-size: 16px;
   }
+  header .top_menu .open_search{
+    height: 30px;
+  }
 }
 
-@media screen and (max-width:768px){
-  
+@media screen and (max-width:770px){
+  header .top_menu{
+    gap: var(--padding);
+    justify-content: center;
+    
+  }
+  header .top_menu .open_search{
+    width: 280px;
+  }
+  header .top_menu h1{
+    width: 100px;
+    height: 17px;
+  }
+  header .top_menu h1 a{
+    background: url(../img/CLogo.png)no-repeat;
+    width: 100px;
+    height: 17px;
+  }
+  header .bottom_menu .menu_list li{
+    font-size: 14px;
+    white-space: nowrap;
+  }
+  header .bottom_menu .menu_list li li a{
+    font-size: 12px;
+  }
+  .sec1, .sec2, .sec3, .sec4, .sec5, .sec6, .sec7, .sec8{
+    padding-bottom: calc(var(--padding)*2.5);
+  }
+  .sec1_text h3{
+    font-size: 50px;
+  }
+  .sec1_text h3.ti3{
+    font-size: 50px;
+  }
+  .sec1_text h4{
+    font-size: 35px;
+  }
+  .sec1_text p{
+    font-size: 15px;
+  }
+  .sec1_text .mj{
+    transform: translateY(30px);
+    width: 250px;
+    height: 200px;
+  }
+
+  .sec1_text .tj{
+    width: 250px;
+  }
+  .sec1_text .pnk{
+    font-size: 40px;
+    padding-bottom: 30px;
+  }
+  .sec1_text .stfont{
+    font-size: 30px;
+  }
+  .sec1 .lik{
+    width: 150px;
+    padding: 10px 20px;
+  }
+  .sec1 .lik.lpnk{
+    width: 150px;
+    padding: 10px 20px;
+  }
+  .sec1 .lik a{
+    font-size: 16px;
+  }
+  .sec2 .container p{
+    font-size: 12px;
+    line-height: 15px;
+    padding-bottom: 15px;
+  }
+  .sec2 .sec2_slides{
+    height: auto;
+  }
+  .sec2 .container h2{
+    font-size: 35px;
+  }
+  .sec2 .sec2_slides li{
+    padding-left: 10px;
+  }
+  .sec2 h3{
+    font-size: 16px;
+  }
 }
