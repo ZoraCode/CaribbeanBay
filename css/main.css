@@ -342,11 +342,9 @@ header .bottom_menu.sticky{
   padding-top: calc(var(--padding)*5);
 }
 .sec3 .stfont{
-  left: 50%;
-  top: 120px;
-  transform: translate(-50%);
+  top: -90px;
   font-size: 45px;
-  white-space: nowrap;
+  text-align: center;
   color: var(--sub_color3);
   z-index: -1;
 }
@@ -361,15 +359,12 @@ header .bottom_menu.sticky{
 
 .sec3 .blist .nbtn{
   border: 1px solid var(--sub_color2);
-  line-height: 20px;
   color: var(--sub_color2);
+  white-space: nowrap;
 }
 .sec3 .blist .nbtn:hover{
   color: var(--white);
   background-color: var(--sub_color2);
-}
-.sec3 .blist .nbtn a{
-  display: block;
 }
 .sec3 .sizeCt{
   padding-top: calc(var(--padding)*.5);
@@ -380,6 +375,7 @@ header .bottom_menu.sticky{
 }
 .sec3 h3{
   font-weight: bold;
+  white-space: nowrap;
 }
 .sec3 h3::before{
   content: ' ';
@@ -422,14 +418,12 @@ header .bottom_menu.sticky{
 
 .sec4 form #choice,
 .sec4 form #out{
-  /* border: 1px solid var(--sub_color2); */
   cursor: pointer;
   border: none;
   border-radius: 10px;
   font-size: 30px;
   font-weight: bold;
   color: var(--sub_color2);
-  /* padding: 0 calc(var(--padding)*0.5); */
 }
 .sec4 form #choice:hover,
 .sec4 form #out:hover{
@@ -574,8 +568,11 @@ header .bottom_menu.sticky{
   margin: 0 auto;
   gap:1rem;
 }
-.sec6 .food_list .d-flex{
+.sec6 .food_list .list{
+  display: flex;
+  align-items: center;
   gap:1rem;
+  flex: 1;
 }
 .sec6 .food_list .box{
   position: relative;
@@ -640,11 +637,6 @@ header .bottom_menu.sticky{
   color: var(--light_g1);
   background-color: var(--white);
 }
-
-
-
-
-
 
 
 /* sec8 */
@@ -738,4 +730,57 @@ footer form button a:hover{
 
 
 /* 1320px */
+@media screen and (max-width:1274px){ 
+  body, *{
+    width: 100%;
+  }
 
+  header .top_menu .open_search{
+    width: 100%;
+  }
+
+  header .top_menu .icon{
+    width: 123px;
+  }
+  h1{
+    width: 210px;
+  }
+  .sec1 .lik{
+    width: 200PX;
+    white-space: nowrap;
+  }
+  .sec7 .mainVideo .linkeve{
+    width: 195px;
+    white-space: nowrap;
+  }
+  .sec4 form{
+    width: 400px;
+    white-space: nowrap;
+  }
+  .sec4 form #choice{
+    width: 200px;
+  }
+  .sec4 form #out{
+    width: 120px;
+  }
+  .sec5 .Sec5_left .event{
+    white-space: nowrap;
+    width: 260px;
+  }
+} 
+
+@media screen and (max-width:1000px){
+  .sec3 .blist ul{
+    gap: 10px;
+  }
+  .sec3 .blist .nbtn{
+    /* padding: 8px 25px; */
+  }
+  .sec3 .blist ul li a{
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width:768px){
+  
+}
