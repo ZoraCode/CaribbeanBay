@@ -139,17 +139,44 @@ const sec3swiper = new Swiper('.sec3ab', {
   autoplay: {
     delay: 3000,
   },
+  breakpoints: {
+        
+    400: {
+      slidesPerView: 4,  //브라우저가 768보다 클 때
+    },
+    1024: {
+      slidesPerView: 6,  //브라우저가 1024보다 클 때
+    },
+  },
+});
 
- });
+
 
  $('.slidebtn a').click(function(e){
   e.preventDefault();
   let target = $(this).attr('data-index');
   sec3swiper.slideTo(target);
  });
-//  sec3swiper.slideTo(6);
 
 
+
+function sec3Scr(){
+  let sec3BtnO = $('.sec3 .blist li.nbtn');
+  let Sec3Width = $(window).width();
+
+  if(Sec3Width <= 770){
+    sec3BtnO.removeClass('nbtn');
+  } else {
+    sec3BtnO.addClass('nbtn');
+  }
+
+
+  
+};
+
+$(window).resize(function() {
+  sec3Scr();
+});
   // sc4
 
 
