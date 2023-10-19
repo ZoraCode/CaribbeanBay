@@ -264,6 +264,7 @@ header .bottom_menu.sticky{
 }
 .sec1_text .tj{
   transform: translate(-200px , 200px);
+  width: 300px;
 }
 .sec1_text .nbtn a {
   font-size: 16px;
@@ -280,12 +281,6 @@ header .bottom_menu.sticky{
   border-radius: 10px; 
 }  
 .sec1_prev, .sec1_next {
-  /* cursor: pointer; 
-  position: relative;
-  padding: 3px; 
-  bottom: 15px;
-  z-index: 1; */
-
   display: none;
 }
 .sec1_controls {
@@ -317,6 +312,9 @@ header .bottom_menu.sticky{
 }
 .sec2 .sec2_slides{
   height: 550px;
+}
+.sec2 .sec2_slides li{
+  padding-left: 10px;
 }
 .sec2 .step{
   text-transform: uppercase;
@@ -739,8 +737,6 @@ footer form button a:hover{
     width: 100%;
   }
 
-
-
   header .top_menu .icon{
     width: 123px;
   }
@@ -772,6 +768,10 @@ footer form button a:hover{
 } 
 
 @media screen and (max-width:1000px){
+  .sec1, .sec2, .sec3, .sec4, .sec5, .sec6, .sec7, .sec8{
+    padding-bottom: calc(var(--padding)*2.5);
+  }
+
   .sec3 .blist ul{
     gap: 10px;
   }
@@ -810,9 +810,6 @@ footer form button a:hover{
   }
   header .bottom_menu .menu_list li li a{
     font-size: 12px;
-  }
-  .sec1, .sec2, .sec3, .sec4, .sec5, .sec6, .sec7, .sec8{
-    padding-bottom: calc(var(--padding)*2.5);
   }
   .sec1_text h3{
     font-size: 50px;
@@ -888,9 +885,8 @@ footer form button a:hover{
   .sec3 .blist ul{
     padding-bottom: var(--padding);
   }
-  .sec3 .blist .slidebtn li{
-    width: 80px;
-    text-align: center;
+  .sec3 .blist .slidebtn li.nbtn{
+    padding: 10px 15px;
   }
   .sec3 .blist li a{
     font-size: 12px;

@@ -160,23 +160,22 @@ const sec3swiper = new Swiper('.sec3ab', {
 
 
 
-function sec3Scr(){
-  let sec3BtnO = $('.sec3 .blist li.nbtn');
-  let Sec3Width = $(window).width();
+// function sec3Scr(){
+//   let sec3BtnO = $('.sec3 .blist li.nbtn');
+//   let Sec3Width = $(window).width();
 
-  if(Sec3Width <= 770){
-    sec3BtnO.removeClass('nbtn');
-  } else {
-    sec3BtnO.addClass('nbtn');
-  }
+//   if(Sec3Width <= 770){
+//     sec3BtnO.removeClass('nbtn');
+//   } else {
+//     sec3BtnO.addClass('nbtn');
+//   }
+// };
+
+// $(window).resize(function() {
+//   sec3Scr();
+// });
 
 
-  
-};
-
-$(window).resize(function() {
-  sec3Scr();
-});
   // sc4
 
 
