@@ -121,17 +121,17 @@ h1,h2,h3,h4,h5,h6,p,span,textarea,input,label,a,select,option,address{
 .p1 {
   font-size: 20px;
   font-weight:normal;
-  line-height: calc(var(--padding));
+  line-height: 1.6rem;
 }
 .p2 {
   font-size: 18px;
   font-weight:normal;
-  line-height: calc(var(--padding));
+  line-height: 1.6rem;
 }
 .p3 {
   font-size: 16px;
   font-weight:normal;
-  line-height: calc(var(--padding));
+  line-height: 1.2rem;
 }
 .stfont{
   font-family: 'Parisienne';
