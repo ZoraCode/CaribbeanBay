@@ -466,17 +466,20 @@ header .bottom_menu.sticky{
 .sec5 .container{
   gap: calc(var(--padding)*2);
 }
-.sec5 .Sec5_left .event{
+.sec5 .Sec5_left{
+  width: 45%;
+}
+.sec5 .Sec5_right{
+  width: 45%;
+}
+.sec5 .Sec5_left .event{ 
   background-color: var(--sub_color2);
   color: var(--white);
 }
 .sec5 .Sec5_left .event:hover{
   background-color: var(--sub_color3);
 }
-.sec5 .Sec5_left .event a{
-  display: block;
-  transform: translateY(2px);
-}
+
 .sec5 .Sec5_right .slider_box{
   gap: 15px;
 }
@@ -664,16 +667,26 @@ transform: translateY(2px);
 .sec8 .today span{
   color: var(--sub_color1);
 }
+.sec8 .news thead tr th{
+  white-space: nowrap;
+}
 .sec8 .news .nplus{
   font-size: 30px;
   text-align: end;
 }
+
 .sec8 .news .nplus i:hover{
   transform: rotate(180deg);
   transition: .5s;
 }
 .sec8 .news .table tbody i{
   font-size: 10px;
+}
+.sec8 .news .table tbody th{
+  width: 15px;
+}
+.sec8 .news .table tbody td{
+  white-space: nowrap;
 }
 .sec8 .news .table tbody i:hover{
   color: var(--sub_color1);
@@ -727,6 +740,16 @@ footer form button a{
 footer form button a:hover{
   color: var(--sub_color1);
 }
+footer h2{
+  width: 210px;
+}
+footer h2 a{
+  background: url(../img/Logo.png)no-repeat;
+  text-indent: -1000em;
+  display: block;
+  width: 209px;
+  height: 36px;
+}
 
 
 
@@ -764,7 +787,6 @@ footer form button a:hover{
   }
   .sec5 .Sec5_left .event{
     white-space: nowrap;
-    width: 260px;
   }
 } 
 
@@ -932,5 +954,48 @@ footer form button a:hover{
   .sec5 .Sec5_left h2{
     font-size: 35px;
   }
+  .sec5 .Sec5_left .event{
+    font-size: 14px;
+  }
+
+  .sec6 .title p{
+    font-size: 20px;
+    padding: 0;
+  }
+  .sec6 .title h2{
+    font-size: 35px;
+  }
+  .sec6 .food_list .box p{
+    font-size: 11px;
+    line-height: 1.3rem;
+  }
   
+  .sec8 .news{
+    display: none;
+  }
+  .sec8 .today h2{
+    font-size: 35px;
+  }
+  .sec8 .today h3{
+    font-size: 20px;
+  }
+  .sec8 .today p{
+    font-size: 16px;
+  }
+  .sec8 .today p span{
+    font-size: 20px;
+  }
+  .sec8 .today .nbtn{
+    width: 200px;
+    margin: 0 auto;
+  }
+  .sec8 .today .nbtn a{
+    font-size: 14px;
+    transform: translateY(0px);
+  }
+
+
+  footer form{
+    width: 70%;
+  }
 }
