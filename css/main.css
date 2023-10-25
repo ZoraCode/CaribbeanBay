@@ -618,13 +618,13 @@ header .bottom_menu.sticky{
   height: 550px;
   background:url(https://mfhaoswulcnn3822236.cdn.ntruss.com/data/barrel_data/images/banner/5828/joyjoy.jpg) no-repeat  center 0;
   background-size:cover;
-  /* margin-bottom: calc(var(--padding)*5); */
 }
 .sec7 .mainVideo{
+  display: flex;
   padding-top: calc(var(--padding)*3);
   gap: calc(var(--padding)*2);
 }
-.sec7 .mainVideo h3{
+.sec7 .mainVideo h2{
   color: var(--white);
   font-size: 40px;
 }
@@ -858,6 +858,9 @@ footer h2 a{
     width: 250px;
     height: 200px;
   }
+  .sec1_text .spnk{
+    line-height: 1.5rem;
+  }
 
   .sec1_text .tj{
     width: 250px;
@@ -868,6 +871,9 @@ footer h2 a{
   }
   .sec1_text .stfont{
     font-size: 30px;
+  }
+  .sec1_text .lpnk.m_pd{
+    padding-bottom: var(--padding);
   }
   .sec1 .lik{
     width: 150px;
@@ -953,9 +959,11 @@ footer h2 a{
   }
   .sec5 .Sec5_left h2{
     font-size: 35px;
+    line-height: 2.5rem;
   }
   .sec5 .Sec5_left .event{
     font-size: 14px;
+    width: 170px;
   }
 
   .sec6 .title p{
@@ -969,7 +977,31 @@ footer h2 a{
     font-size: 11px;
     line-height: 1.3rem;
   }
-  
+  .sec7{
+    height: auto;
+  }
+  .sec7 .mainVideo{
+    display: block;
+  }
+  .sec7 iframe{
+    width: 100%;
+    height: 300px;
+    padding-bottom: var(--padding);
+  }
+  .sec7 .text h2{
+    font-size: 25px;
+    text-align: center;
+  }
+  .sec7 .text p{
+    display: none;
+  }
+  .sec7 .mainVideo .linkeve{
+    display: block;
+    margin: 0 auto;
+    font-size: 14px;
+    width: 180px;
+  }
+
   .sec8 .news{
     display: none;
   }
@@ -994,8 +1026,21 @@ footer h2 a{
     transform: translateY(0px);
   }
 
-
+  
+  footer h2{
+    margin: 0 auto;
+    margin-bottom: var(--padding);
+  }
   footer form{
-    width: 70%;
+    display: none;
+  }
+  footer .footer_content{
+    font-size: 10px;
+  }
+  footer address.pd{
+    font-size: 10px;
+  }
+  footer .copyright{
+    font-size: 12px;
   }
 }

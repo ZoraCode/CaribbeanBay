@@ -194,7 +194,9 @@ header .bottom_menu.sticky{
   display: flex;
 }
 
-
+.order{
+  padding-top: calc(var(--padding)*3);
+}
 .order .order_cont{
   margin: 0 auto;
   width: 940px;
@@ -220,7 +222,7 @@ header .bottom_menu.sticky{
   font-family: 'DM Serif Display';
   font-size: calc(var(--font_size)*6); 
   color: var(--light_g3);
-  line-height: calc(var(--line_height)*6);
+  line-height: calc(var(--padding)*6);
   padding: var(--padding) 0 var(--padding) 0;
   width: 125px;
 }
@@ -237,14 +239,8 @@ header .bottom_menu.sticky{
   width: 452px;
 }
 .order h4{
-  color: var(--light_g6);
-}
-.order .p3_tt{
-  color: var(--light_g3);
+  font-size: 40px;
   font-weight: bold;
-}
-.order .p1_tt{
-  color: var(--light_g4);
 }
 
 
