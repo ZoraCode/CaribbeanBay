@@ -158,27 +158,26 @@ header{
 
 .time_table{
     width: 700px;
-    /* height: 450px; */
     margin: 0 auto;
     overflow: hidden;
   }
-  
   .line{
-    width: 100%;
-    height: 900px;
-    /* background: url('../img/info_Background.jpeg')no-repeat center; */
     background: linear-gradient(180deg, #A4B9D0 0%, #D9B59A 100%);
     background-attachment: fixed;
     background-repeat: no-repeat;
     margin-bottom: calc(var(--padding)*5);
   }
   .line i{
+    width: 5%;
     font-size: calc(var(--font_size)*2);
     color: #a07f65;
   }
+  .line .swiper-slide{
+    border-radius: 5px;
+  }
   .line .ttime{
     text-align: center;
-    padding-top: calc(var(--padding)*2);
+    padding-top: calc(var(--padding)*2.5);
   }
   .time_table .list div{
     position:absolute;
@@ -211,21 +210,17 @@ header{
   .accordion-body{
     width: 530px;
   }
-  .guide .pidback{
-    color: var(--light_g4);
-  }
-  .guide .gid .acc_list button{
-    color: var(--light_g5);
-  }
+
   .accordion-button:not(.collapsed){
     background-color: var(--sub_color1);
-    color: var(--sub_color3);
-    /* color: var(--white); */
+    color: var(--white);
   }
 
   @media screen and (max-width:1274px){
     .line{
       width: 100%;
     }
-
+    .time_table{
+   
+    }
   }
