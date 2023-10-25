@@ -210,11 +210,15 @@ function footerDf(){
 
 footerDf();
 
-function load(){
-  let size = $(window).width();
-  if (size <= 770){
-    document.Location.reload();
-  }else{
-    document.Location.reload();
-  }
-}
+
+// window.addEventListener('resize', function() {
+//   // 현재 창의 너비를 확인
+//   let currentWidth = window.innerWidth;
+
+//   // 원하는 폭(여기서는 770px)일 때 새로고침
+//   if (currentWidth === 768) {
+//     location.reload();
+//   }
+// });
+
+

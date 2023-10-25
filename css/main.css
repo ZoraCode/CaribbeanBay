@@ -715,6 +715,9 @@ footer{
   padding: calc(var(--padding)*2);
   box-shadow: 24px 24px 48px 0px #A6ABBD, -24px -24px 48px 0px #FAFBFF;
 }
+footer .footer-link{
+  gap: calc(var(--padding)*.5);
+}
 footer .footer_wrap{
   margin: 0 auto;
   gap: 0 60px;
@@ -730,18 +733,17 @@ footer .footer_content a:hover{
   color: var(--sub_color1);
 }
 footer form{
-  width: 600px;
+  width: 90%;
   border: 1px solid var(--light_g3);
   margin-bottom: calc(var(--padding)*1);
 }
 footer form input{
   padding: 5px 15px;
-  border-right: 1px solid var(--light_g3);
-  width: 80%;
-  background: var(--white);
+  width: 70%;
 }
-footer form button a{
-  display: block;
+footer form button{
+  padding: 5px 15px;
+  border-left: 1px solid var(--light_g3);
 }
 footer form button a:hover{
   color: var(--sub_color1);
@@ -803,6 +805,10 @@ footer h2 a{
     display: block;
     margin: 0 auto;
   }
+
+  footer form button{
+    width: 120px;
+  }
 } 
 
 @media screen and (max-width:1000px){
@@ -836,6 +842,15 @@ footer h2 a{
   .sec8 .today .tt{
     font-size: 45px;
   }
+  footer .footer_content {
+    font-size: 16px;
+  }
+  footer address.p2{
+    font-size: 14px;
+  }
+  footer .copyright{
+    font-size: 14px;
+  }
 
 }
 
@@ -867,6 +882,12 @@ footer h2 a{
   }
   header .bottom_menu .menu_list li li a{
     font-size: 12px;
+  }
+  header .top_menu .open_search input::placeholder{
+    font-size: 12px;
+  }
+  .sec1_text{
+    gap: var(--padding);
   }
   .sec1_text h3{
     font-size: 50px;
