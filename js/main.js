@@ -209,3 +209,12 @@ function footerDf(){
 }
 
 footerDf();
+
+function load(){
+  let size = $(window).width();
+  if (size <= 770){
+    document.Location.reload();
+  }else{
+    document.Location.reload();
+  }
+}

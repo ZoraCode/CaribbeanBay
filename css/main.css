@@ -52,7 +52,7 @@ header .top_menu .open_search input::placeholder{
 }
 
 header .top_menu .icon{
-  gap: 5px;
+  gap: 10px;
 }
 header .top_menu .icon a{
   display: block;
@@ -650,6 +650,11 @@ header .bottom_menu.sticky{
 .sec8{
   margin: 0 auto;
 }
+.sec8 .container{
+  gap: calc(var(--padding)*2);
+  display: flex;
+  justify-content: space-around ;
+}
 .sec8 .today{
   text-align: center;
   text-transform: uppercase;
@@ -662,11 +667,12 @@ header .bottom_menu.sticky{
   background: var(--sub_color3);
 }
 .sec8 .today .nbtn a{
-transform: translateY(2px);
+  transform: translateY(2px);
 }
 .sec8 .today span{
   color: var(--sub_color1);
 }
+
 .sec8 .news thead tr th{
   white-space: nowrap;
 }
@@ -767,6 +773,10 @@ footer h2 a{
   h1{
     width: 210px;
   }
+  header .bottom_menu .menu_list{
+    width: 600px;
+    white-space: nowrap;
+  }
   .sec1 .lik{
     width: 200PX;
     white-space: nowrap;
@@ -788,13 +798,21 @@ footer h2 a{
   .sec5 .Sec5_left .event{
     white-space: nowrap;
   }
+  .sec8 .today .nbtn{
+    width: 275px;
+    display: block;
+    margin: 0 auto;
+  }
 } 
 
 @media screen and (max-width:1000px){
   .sec1, .sec2, .sec3, .sec4, .sec5, .sec6, .sec7, .sec8{
     padding-bottom: calc(var(--padding)*2.5);
   }
-
+  
+  header .top_menu .open_search{
+    height: 30px;
+  }
   .sec3 .blist ul{
     gap: 10px;
   }
@@ -804,12 +822,21 @@ footer h2 a{
   .sec3 .blist ul li{
     font-size: 16px;
   }
+  
   .sec3 .blist ul li:hover a{
     color: var(--white);
   }
-  header .top_menu .open_search{
-    height: 30px;
+  .sec8 .container{
+    display: block;
   }
+  .sec8 .news{
+    padding-bottom: calc(var(--padding)*3);
+  }
+  .sec8 .news thead tr th,
+  .sec8 .today .tt{
+    font-size: 45px;
+  }
+
 }
 
 @media screen and (max-width:770px){
