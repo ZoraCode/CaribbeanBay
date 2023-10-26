@@ -272,6 +272,7 @@ header .bottom_menu.sticky{
 @media screen and (max-width: 1000px) {
   .order div div{
     width: 100%;
+    gap: 30px;
   }
   .order h3::before{
     width: auto;
@@ -289,44 +290,32 @@ header .bottom_menu.sticky{
   body{
     margin: 0 auto;
   }
-  .header2_tt{
-    font-size: 40px;
-  }
-  .sub_title2_tt{
+  .title p{
     font-size: 20px;
+  }
+  .title h2{
+    font-size: 35px;
   }
   .order{
     width: 100%;
   }
   .order h3{
     font-size: 80px;
+    line-height: 2rem;
   }
   .order img{
     width: 100%;
     height: 300px;
   }
-
-  .pick, .locker, .coin, .room, .gest, .surv{
-    /* display: block; */
-    margin: 0 auto;
+  .order h4{
+    font-size: 25px;
+    padding: 0;
   }
-  .line{
-    width: 90%;
+  .order .p1{
+    font-size: 18px;
+    padding-bottom: var(--padding);
   }
-  .guide .gid{
-    display: block;
-  }
-  .accordion{
-    text-align: center;
-  }
-  .accordion button{
-    margin: 0 auto;
-  }
-  .macada .d-flex{
-    overflow: hidden;
-  }
-  .sec3 .pool .pool_text1,
-  .sec3 .pool .pool_text2{
-    width: 80%;
+  .order .p3{
+    font-size: 14px;
   }
 }

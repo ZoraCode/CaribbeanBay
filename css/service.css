@@ -170,7 +170,6 @@ header .bottom_menu.sticky{
     position: relative; 
     z-index:1;
     width: 100%;
-    height: calc(var(--padding)*2);
   }
   .tab_nav{
     margin: 0 auto;
@@ -303,21 +302,49 @@ header .bottom_menu.sticky{
   transform: translateY(-10px);
   padding-bottom: 30px;
 }
-/* .service .list .text p{
-  padding-top: 10px;
-} */
 @media screen and (max-width: 1320px) {
   .tab_nav{width: 100%;}
+  .convenient button{
+    width: 150px;
+  }
 }
+
+
+
 @media screen and (max-width: 1000px) {
   .convenient .fl{flex-direction: column;}
+  .service .list .text h3{
+    font-size: 18px;
+  }
+  .service .list .text h3, .service .list .text p{
+    font-size: 14px;
+  }
 }
+
+
+
 @media screen and (max-width: 768px) {
+  .text p, .title p{
+    font-size: 20px;
+  }
+  .text h2, .title h2{
+    font-size: 35px;
+  }
+  .tab li a{
+    font-size: 14px;
+  }
   .container{width: 90%;}
   .convenient .img_list{
     width: 80%;
     margin: 0 auto;
     padding-bottom: calc(var(--padding)*2);
   }
+  .convenient .text_list p{
+    font-size: 14px;
+  }
   .tab li a{white-space: nowrap;}
+  
+  .service .list .text{
+    bottom: -85px;
+  }
 }
