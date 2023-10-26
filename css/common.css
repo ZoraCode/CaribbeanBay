@@ -172,3 +172,44 @@ h1,h2,h3,h4,h5,h6,p,span,textarea,input,label,a,select,option,address{
 .hidden{
   display: none;
 }
+
+
+*[class*="op3"]{
+  opacity: 0;
+  transition:.3s ease-out;
+}
+*[class*="op5"]{
+  opacity: 0;
+  transition:.5s ease-out;
+}
+*[class*="op7"]{
+  opacity: 0;
+  transition:.7s ease-out;
+}
+*[class*="op10"]{
+  opacity: 0;
+  transition:1s ease-out;
+}
+.op-in-left5{
+  transform:translateX(-20%);    
+}
+.op-in-left{
+  transform:translateX(-30%);    
+}
+.op-in-right{
+  transform:translateX(30%);
+}
+.op-up-top5{
+  transform:translateY(-20%);
+}
+.op-up-top{
+  transform:translateY(-30%);
+}
+.op-up-bottom{
+  transform:translateY(30%);
+}
+
+ .move [class*="op"]{
+  transform:none;
+  opacity: 1;
+}

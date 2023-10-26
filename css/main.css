@@ -715,10 +715,12 @@ footer{
   padding: calc(var(--padding)*2);
   box-shadow: 24px 24px 48px 0px #A6ABBD, -24px -24px 48px 0px #FAFBFF;
 }
+
 footer .footer-link{
   gap: calc(var(--padding)*.5);
 }
 footer .footer_wrap{
+  display: flex;
   margin: 0 auto;
   gap: 0 60px;
 }
@@ -850,6 +852,9 @@ footer h2 a{
   }
   footer .copyright{
     font-size: 14px;
+  }
+  footer .footer_wrap{
+    display: block;
   }
 
 }

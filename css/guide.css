@@ -204,12 +204,7 @@ header{
     gap: 0 70px;
     height: 600px;
   }
-  .guide button{
-    width: 530px;
-  }
-  .accordion-body{
-    width: 530px;
-  }
+
 
   .accordion-button:not(.collapsed){
     background-color: var(--sub_color1);
@@ -220,7 +215,77 @@ header{
     .line{
       width: 100%;
     }
-    .time_table{
-   
+    
+    .accordion-header{
+      width: 100%;
+    }
+    .acc_list{
+      width: 100%;
+    }
+    .guide{
+      width: 100%;
+    }
+    .guide img{
+     /* height: 300px; */
+    }
+    .accordion-flush .accordion-item{
+      width: 100%;
+    }
+    .acc_list{
+      width: auto;
+    }
+    .accordion{
+    }
+    .accordion-header{
+      width: 100%;
+    }
+    .accordion-flush .accordion-item .accordion-button, .accordion-flush .accordion-item .accordion-button.collapsed{
+      gap: 30px;
+      width: 100%;
+    }
+    .guide .d-flex.flex-column{
+      
+    }
+  }
+
+
+  @media screen and (max-width:768px){
+    .guide{
+      text-align: center;
+    }
+    .ttime p{
+      font-size: 20px;
+    }
+    .ttime h2{
+      font-size: 35px;
+    }
+    .guide img{
+      display: none;      
+    }
+    .time_table .list div{
+      font-size: 10px;
+    }
+    .acc_list{
+      width: 90%;
+    }
+    .accordion-button{
+      margin-left: 10%;
+    }
+    .accordion-button::after{
+      margin-left:30%;
+    }
+    .pidback{
+      font-size: 16px;
+    }
+    .accordion-flush .accordion-item .accordion-button, .accordion-flush .accordion-item .accordion-button.collapsed{
+      font-size: 16px;
+    }
+    .accordion-item:last-of-type .accordion-collapse{
+      margin-left:10%;
+      text-align: left;
+      width: 80%;
+    }
+    .accordion-item:last-of-type .accordion-collapse p{
+      font-size: 12px;
     }
   }

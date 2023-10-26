@@ -37,7 +37,6 @@ window.addEventListener('scroll',()=>{
   
   if(window.scrollY > headerBottomOST){
       header.classList.add('sticky');
-  제
   }else{
       header.classList.remove('sticky');
   }
@@ -196,29 +195,3 @@ const sec3swiper = new Swiper('.sec3ab', {
   $(window).resize(function(){
 
   })
-
-function footerDf(){
-  let screenWidth = $(window).width();
-  if(screenWidth <= 770){
-    $('footer').removeClass('d-flex');
-    $('footer > div').removeClass('d-flex');
-  }else{
-    $('footer').addClass('d-flex');
-    $('footer > div').addClass('d-flex');
-  }
-}
-
-footerDf();
-
-
-// window.addEventListener('resize', function() {
-//   // 현재 창의 너비를 확인
-//   let currentWidth = window.innerWidth;
-
-//   // 원하는 폭(여기서는 770px)일 때 새로고침
-//   if (currentWidth === 768) {
-//     location.reload();
-//   }
-// });
-
-
