@@ -79,105 +79,105 @@ $(window).scroll(function(){
 
 
 
-function sec3_upimg() {
-  let screenWidth = $(window).width();
-  if (screenWidth <= 970) {
-    $('.marca_a').attr('src', 'img/tab/sec3_ta_a.png');
-    $('.marca_b').attr('src', 'img/tab/sec3_ta_b.png');
-    $('.marca_c').attr('src', 'img/tab/sec3_ta_c.png');
-  }else{
-    $('.marca_a').attr('src', 'img/sec3_Marca_A.png');
-    $('.marca_b').attr('src', 'img/sec3_Marca_B.png');
-    $('.marca_c').attr('src', 'img/sec3_Marca_C.png');
-}
-}
+// function sec3_upimg() {
+//   let screenWidth = $(window).width();
+//   if (screenWidth <= 970) {
+//     $('.marca_a').attr('src', 'img/Sub/tab/sec3_ta_a.png');
+//     $('.marca_b').attr('src', 'img/Sub/tab/sec3_ta_b.png');
+//     $('.marca_c').attr('src', 'img/Sub/tab/sec3_ta_c.png');
+//   }else{
+//     $('.marca_a').attr('src', 'img/Sub/sec3_Marca_A.png');
+//     $('.marca_b').attr('src', 'img/Sub/sec3_Marca_B.png');
+//     $('.marca_c').attr('src', 'img/Sub/sec3_Marca_C.png');
+// }
+// }
 
-function sec3updateImage() {
-  let screenWidth = $(window).width();
-  if (screenWidth <= 768) {
+// function sec3updateImage() {
+//   let screenWidth = $(window).width();
+//   if (screenWidth <= 768) {
 
-    $('.whild_b').attr('src', 'img/tab/sec3_ta_f.png');
-    $('.whild_a').attr('src', 'img/tab/sec3_ta_d.png');
-    $('.whild_d').attr('src', 'img/tab/sec3_ta_g.png');
-    $('.whild_c').attr('src', 'img/tab/sec3_ta_e.png');
-    $('.zone_a').attr('src', 'img/tab/sec3_ta_h.png');
-    $('.zone_b').attr('src', 'img/tab/sec3_ta_i.png');
-    $('.zone_c').attr('src', 'img/tab/sec3_ta_j.png');
-    $('.spa_a').attr('src', 'img/tab/sec3_ta_k.png');
-    $('.spa_b').attr('src', 'img/tab/sec3_ta_l.png');
-    $('.dj_a').attr('src', 'img/tab/sec3_ta_o.png');
-    $('.dj_b').attr('src', 'img/tab/sec3_ta_m.png');
-    $('.dj_c').attr('src', 'img/tab/sec3_ta_n.png');
+//     $('.whild_b').attr('src', 'img/Sub/tab/sec3_ta_f.png');
+//     $('.whild_a').attr('src', 'img/tab/sec3_ta_d.png');
+//     $('.whild_d').attr('src', 'img/tab/sec3_ta_g.png');
+//     $('.whild_c').attr('src', 'img/tab/sec3_ta_e.png');
+//     $('.zone_a').attr('src', 'img/tab/sec3_ta_h.png');
+//     $('.zone_b').attr('src', 'img/tab/sec3_ta_i.png');
+//     $('.zone_c').attr('src', 'img/tab/sec3_ta_j.png');
+//     $('.spa_a').attr('src', 'img/tab/sec3_ta_k.png');
+//     $('.spa_b').attr('src', 'img/tab/sec3_ta_l.png');
+//     $('.dj_a').attr('src', 'img/tab/sec3_ta_o.png');
+//     $('.dj_b').attr('src', 'img/tab/sec3_ta_m.png');
+//     $('.dj_c').attr('src', 'img/tab/sec3_ta_n.png');
 
-    $('.sec3 .content').css('display','none');
-    $('.sec3 br').css('display','none');
+//     $('.sec3 .content').css('display','none');
+//     $('.sec3 br').css('display','none');
 
     
-  } else {
-    $('.marca_a').attr('src', 'img/sec3_Marca_A.png');
-    $('.marca_b').attr('src', 'img/sec3_Marca_B.png');
-    $('.marca_c').attr('src', 'img/sec3_Marca_C.png');
-    $('.whild_b').attr('src', 'img/sec_3Whild_B.png');
-    $('.whild_a').attr('src', 'img/sec_3Whild_A.png');
-    $('.whild_d').attr('src', 'img/sec_3Whild_D.png');
-    $('.whild_c').attr('src', 'img/sec_3Whild_C.png');
-    $('.zone_a').attr('src', 'img/sec3_Photo_Zone_A.png');
-    $('.zone_b').attr('src', 'img/Sec3_Photo_B.png');
-    $('.zone_c').attr('src', 'img/sec3_Photo_Zone_C.png');
-    $('.spa_a').attr('src', 'img/sec3_Cave_Spa.png');
-    $('.spa_b').attr('src', 'img/sec3_Cave Spa_Back.png');
-    $('.dj_a').attr('src', 'img/sec3_DJ_A.png');
-    $('.dj_b').attr('src', 'img/sec3_DJ_B.png');
-    $('.dj_c').attr('src', 'img/sec3_DJ_C.png');
+//   } else {
+//     $('.marca_a').attr('src', 'img/sec3_Marca_A.png');
+//     $('.marca_b').attr('src', 'img/sec3_Marca_B.png');
+//     $('.marca_c').attr('src', 'img/sec3_Marca_C.png');
+//     $('.whild_b').attr('src', 'img/sec_3Whild_B.png');
+//     $('.whild_a').attr('src', 'img/sec_3Whild_A.png');
+//     $('.whild_d').attr('src', 'img/sec_3Whild_D.png');
+//     $('.whild_c').attr('src', 'img/sec_3Whild_C.png');
+//     $('.zone_a').attr('src', 'img/sec3_Photo_Zone_A.png');
+//     $('.zone_b').attr('src', 'img/Sec3_Photo_B.png');
+//     $('.zone_c').attr('src', 'img/sec3_Photo_Zone_C.png');
+//     $('.spa_a').attr('src', 'img/sec3_Cave_Spa.png');
+//     $('.spa_b').attr('src', 'img/sec3_Cave Spa_Back.png');
+//     $('.dj_a').attr('src', 'img/sec3_DJ_A.png');
+//     $('.dj_b').attr('src', 'img/sec3_DJ_B.png');
+//     $('.dj_c').attr('src', 'img/sec3_DJ_C.png');
 
-    $('.sec3 .content').css('display','block');
-  }
-}
+//     $('.sec3 .content').css('display','block');
+//   }
+// }
 
 
 // 480스크립트
 
-function toggleContent() {
+// function toggleContent() {
   
  
-  let screenWidth = $(window).width();
+//   let screenWidth = $(window).width();
   
-  if(screenWidth <= 480) {
-      $('.pc').hide();
-      $('.mobile').show();
-    } 
-  else{
-      $('.pc').show();
-      $('.mobile').hide();
-    }
-  }
-  toggleContent();
+//   if(screenWidth <= 480) {
+//       $('.pc').hide();
+//       $('.mobile').show();
+//     } 
+//   else{
+//       $('.pc').show();
+//       $('.mobile').hide();
+//     }
+//   }
+//   toggleContent();
 
 
-  $(window).resize(function() { 
+//   $(window).resize(function() { 
 
-  toggleContent();
+//   toggleContent();
 
-  });
+//   });
 
-sec3updateImage();
+// sec3updateImage();
 
-$(window).resize(function() {
-  sec3updateImage();
-  sec3_upimg();
-});
+// $(window).resize(function() {
+//   sec3updateImage();
+//   sec3_upimg();
+// });
 
 
 
-function sec3rotateSlider() {
-  const activeSlide = $('.slider-item.active');
-  const nextSlide = activeSlide.next();
+// function sec3rotateSlider() {
+//   const activeSlide = $('.slider-item.active');
+//   const nextSlide = activeSlide.next();
 
-  if (nextSlide.length === 0) {
-    $('.slider-item').first().addClass('active');
-  } else {
-    nextSlide.addClass('active');
-  }
-  activeSlide.removeClass('active');
-}
-setInterval(sec3rotateSlider, 3000);
+//   if (nextSlide.length === 0) {
+//     $('.slider-item').first().addClass('active');
+//   } else {
+//     nextSlide.addClass('active');
+//   }
+//   activeSlide.removeClass('active');
+// }
+// setInterval(sec3rotateSlider, 3000);

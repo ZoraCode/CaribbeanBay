@@ -1,4 +1,4 @@
-/* Sec3 */
+
   
 *[class*="sha_sky"]{
     box-shadow: 10px 10px 30px 0px rgba(0, 194, 255, 0.25);
@@ -186,19 +186,19 @@
       display: none;
     }
     .sec3_illust_1{
-      background-image: url(/img/Sec3_Scroll_A.png);
+      background-image: url(/img/Sub/Sec3_Scroll_A.png);
       height: 850px;
     }
     .sec3_illust_2{
-      background-image: url(/img/Sec3_Scroll_B.png);
+      background-image: url(/img/Sub/Sec3_Scroll_B.png);
       height: 850px;
     }
     .sec3_illust_3{
-      background-image: url(/img/Sec3_Scroll_C.png);
+      background-image: url(/img/Sub/Sec3_Scroll_C.png);
       height: 850px;
     }
     .sec3_illust_4{
-      background-image: url(/img/Sec3_Scroll_D.png);
+      background-image: url(/img/Sub/Sec3_Scroll_D.png);
       height: 850px;
     }
     .content {
