@@ -88,27 +88,16 @@ header label:after{
   box-shadow: 5px 5px 5px 5px rgba(79, 85, 100, 0.2) inset;
   transition:0.2s ease-in;
 }
-/*
-0.4s 초반이 느린속도
-label 96E7EF
-원형  1d6269
-*/
 header #wifi {
   display: none;
 }
 header #wifi:checked + label{
   background: #9e9d9d;
 }
-
 header #wifi:checked + label:after{
   background: var(--white);
   left: 40px;
 }
-
-/*  */
-
-
-
 header .bottom_menu{
   width: 100%;
   background:linear-gradient( #fff 60px,rgba(255,255,255,.8) 60px);
@@ -337,7 +326,7 @@ header .bottom_menu.sticky{
 }
 /* sec3 */
 .sec3{
-  background: linear-gradient(180deg, #fcffec 0%, rgba(217, 217, 217, 0.00) 100%);
+  background: linear-gradient(180deg, #fff9f2 0%, rgba(217, 217, 217, 0.00) 100%);
   padding-top: calc(var(--padding)*5);
 }
 .sec3 .stfont{
@@ -475,6 +464,8 @@ header .bottom_menu.sticky{
 .sec5 .Sec5_left .event{ 
   background-color: var(--sub_color2);
   color: var(--white);
+  width: 260px;
+
 }
 .sec5 .Sec5_left .event:hover{
   background-color: var(--sub_color3);
@@ -720,6 +711,7 @@ footer .footer-link{
   gap: calc(var(--padding)*.5);
 }
 footer .footer_wrap{
+  width: 100%;
   display: flex;
   margin: 0 auto;
   gap: 0 60px;
@@ -761,7 +753,97 @@ footer h2 a{
   height: 36px;
 }
 
+.top_button {
+  position: fixed;
+  right: calc(50% + -740px);
+  bottom: 100px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s;
+}
+.top_button.active{
+  opacity: 1;
+	visibility: visible;
+}
+.top_button .top_box {
+  position:relative;
+  height: 27px;
+}
+.top_button .top_arrow {
+  position: absolute;
+  color: #4f2b1c;
+  font-size: 24px;
+  left: calc(50% - 10.5px);
+  bottom: -2px;
+  opacity: .5;
+  animation: to_top 1.5s infinite;
+}
 
+
+/* popup */
+
+
+.popup {
+  width: 450px;
+  background: var(--white);
+  position: fixed;
+  top: calc(var(--padding)*7);
+  left: -50%;
+  z-index: 9999;
+  padding: var(--padding);
+  border-color: var(--main_color);
+  border-radius: 3px;
+  color: var(--light_g1);
+  font-weight: lighter;
+}
+.popup h2{
+  line-height: 2.5rem;
+  padding-bottom: calc(var(--padding));  
+}
+
+
+.popup hr{
+  border: none;
+  border-bottom: 1px solid var(--main_color);
+}
+.popup .info p{
+  padding-bottom: calc(var(--padding)*0.2);
+}
+.popup .info a,
+.popup span {
+  font-weight: bold;
+}
+
+.popup .close_wrap {
+  margin-top: var(--padding);
+} 
+
+.popup #close {
+  cursor: pointer;
+  background: transparent;
+  padding: 10px 20px;
+  transition: .2s;
+  border-radius: 5px;
+}
+
+.popup #close:hover {
+  background: var(--main_color);
+  color: var(--white);
+}
+
+.popup .checkbox label {
+  cursor: pointer;
+  color: rgba(80, 80, 80, .7);
+}
+
+.popup #daycheck:checked + label {
+  font-weight: bold;
+  color: var(--main_color);
+}
+.popup #daycheck:checked + label i {
+  color: var(--main_color);
+}
+/* popup */
 
 
 
@@ -855,6 +937,7 @@ footer h2 a{
   }
   footer .footer_wrap{
     display: block;
+    width: 210px;
   }
 
 }
