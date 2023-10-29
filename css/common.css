@@ -33,7 +33,7 @@ h1,h2,h3,h4,h5,h6,p,span,textarea,input,label,a,select,option,address{
   /* color */
   --white: #ffffff;
   --light_g1: #14161E;
-  --light_g2: #555555;
+  --light_g2: #696969;
   --light_g3: #A1A1A1;
   --black: #000000;
   --main_color: #0069ff;
@@ -107,15 +107,20 @@ h1,h2,h3,h4,h5,h6,p,span,textarea,input,label,a,select,option,address{
   font-weight: bold;
   line-height: calc(var(--padding) *2);
 }
-.st {
-  font-size: 25px;
-  font-weight: normal;
-  line-height: calc(var(--padding)*1.3);
+.rt {
+  font-size: 45px;
+  font-weight: bold;
+  line-height: calc(var(--padding) * 1.8);
 }
 .mt {
   font-size: 30px;
   font-weight: bold;
   line-height: calc(var(--padding) * 1.8);
+}
+.st {
+  font-size: 25px;
+  font-weight: normal;
+  line-height: calc(var(--padding)*1.3);
 }
 .p1 {
   font-size: 20px;
