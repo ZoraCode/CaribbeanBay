@@ -1,11 +1,10 @@
 /* header */
 
 header{
-  background: #f7f7f7;
+  background: #fff;
   height: 150px;
   z-index: 9999;
   position: relative;
-  box-shadow: 0px 0px 20px rgba(255,72,227,.35);
 }
 header .top_menu{
   position: relative;
@@ -29,10 +28,10 @@ header .top_menu .open_search{
   width: 600px;
   height: 45px;
   border-radius: 5px;
-  border: 3px solid rgba(238, 232, 232, 0.2);
+  border: 1.5px solid rgba(173, 165, 165, 0.7);
   background: linear-gradient(135deg, rgba(0, 0, 0, 0.40) 4.29%, rgba(255, 255, 255, 0.40) 95.6%), #FFF;
   background-blend-mode: soft-light, normal;
-  box-shadow: 5px 5px 5px 0px rgba(166, 171, 189, 0.20) inset, -9px -9px 16px 0px rgba(250, 251, 255, 0.30) inset;
+  box-shadow: 5px 5px 5px 0px rgba(203, 206, 214, 0.2) inset, -9px -9px 16px 0px rgba(250, 251, 255, 0.30) inset;
 }
 header .top_menu .open_search .fa-solid{
   color: var(--light_g3);
@@ -47,13 +46,13 @@ header .top_menu .open_search input{
   width: 100%;
 }
 header .top_menu .open_search input::placeholder{
-  color: #bbb;
-  font-weight: 500;
-  font-size: 14px;
+  font-family: "sans-serif";
+  color: var(--light_g3);
+  font-size: 16px;
 }
 
 header .top_menu .icon{
-  gap: 15px;
+  gap: 10px;
 }
 header .top_menu .icon a{
   display: block;
@@ -61,11 +60,11 @@ header .top_menu .icon a{
 
 /*  */
 header #clbt{
-  width: 70px;
+  width: 65px;
 }
 header label {
-  width: 70px;
-  height: 35px;
+  width: 65px;
+  height: 32px;
   border-radius: 25px;
   fill: var(--Light-Text, #A1A1A1);
   box-shadow: 5px 5px 4px 0px rgba(47, 65, 82, 0.15) inset, -5px -5px 4px 0px rgba(171, 178, 194, 0.15) inset;
@@ -81,32 +80,27 @@ header label:after{
   position: absolute;
   left: 5px;
   top: 5px;
-  width: 26px;
-  height: 26px;
+  width: 22px;
+  height: 22px;
   border-radius: 50%;
   stroke-width: 1.371px;
   stroke: rgba(0, 0, 0, 0.50);
   box-shadow: 5px 5px 5px 5px rgba(79, 85, 100, 0.2) inset;
   transition:0.2s ease-in;
 }
-
 header #wifi {
   display: none;
 }
 header #wifi:checked + label{
-  background: #c5c5c5;
+  background: #9e9d9d;
 }
-
 header #wifi:checked + label:after{
   background: var(--white);
   left: 40px;
 }
-
-
-
 header .bottom_menu{
   width: 100%;
-  background:linear-gradient( #f7f7f7 60px,rgba(255,255,255,.8) 60px);
+  background:linear-gradient( #fff 60px,rgba(255,255,255,.8) 60px);
   transition: 0.3s;  
   overflow: hidden;
   height: 60px;
@@ -148,6 +142,62 @@ header .bottom_menu.sticky{
   top:0;
 }
 
+
+/* 1320px */
+@media screen and (max-width:1274px){ 
+  body, *{
+    width: 100%;
+  }
+
+  header .top_menu .icon{
+    width: 123px;
+  }
+  h1{
+    width: 210px;
+  }
+  header .bottom_menu .menu_list{
+    width: 600px;
+    white-space: nowrap;
+  }
+}
+@media screen and (max-width:1000px){  
+  header .top_menu .open_search{
+    height: 30px;
+  }
+  header .top_menu .open_search{
+    width: 400px;
+  }
+}
+@media screen and (max-width:770px){
+  header .top_menu{
+    gap: var(--padding);
+    justify-content: center; 
+  }
+  header .top_menu .open_search{
+    width: 280px;
+  }
+  header .top_menu h1{
+    width: 100px;
+    height: 17px;
+  }
+  header .top_menu h1 a{
+    background: url(../img/CLogo.png)no-repeat;
+    width: 100px;
+    height: 17px;
+  }
+  header .bottom_menu .menu_list li{
+    font-size: 14px;
+    white-space: nowrap;
+  }
+  header .bottom_menu .menu_list li li a{
+    font-size: 12px;
+  }
+  header .top_menu .open_search input::placeholder{
+    font-size: 12px;
+  }
+}
+
+/* body */
 
 
 .move [class*="op"]{
@@ -246,6 +296,100 @@ header .bottom_menu.sticky{
 }
 
 
+
+/* footer */
+
+footer{
+  padding: calc(var(--padding)*2);
+  box-shadow: 24px 24px 48px 0px #A6ABBD, -24px -24px 48px 0px #FAFBFF;
+}
+
+footer .footer-link{
+  gap: calc(var(--padding)*.5);
+}
+footer .footer_wrap{
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  gap: 0 60px;
+}
+footer .footer_content a + a{
+  padding-left: calc(var(--padding)*.5);
+}
+footer .footer_content a + a::before{
+  content: '|';
+  padding-right: 15px;
+}
+footer .footer_content a:hover{
+  color: var(--sub_color1);
+}
+footer form{
+  width: 90%;
+  border: 1px solid var(--light_g3);
+  margin-bottom: calc(var(--padding)*1);
+}
+footer form input{
+  padding: 5px 15px;
+  width: 70%;
+}
+footer form button{
+  padding: 5px 15px;
+  border-left: 1px solid var(--light_g3);
+}
+footer form button a:hover{
+  color: var(--sub_color1);
+}
+footer h2{
+  width: 210px;
+  margin-bottom: var(--padding);
+}
+footer h2 a{
+  background: url(../img/Logo.png)no-repeat;
+  text-indent: -1000em;
+  display: block;
+  width: 209px;
+  height: 36px;
+}
+@media screen and (max-width:1274px){
+  footer form button{
+    width: 120px;
+  }
+}
+@media screen and (max-width:1000px){
+  footer .footer_content {
+    font-size: 16px;
+  }
+  footer address.p2{
+    font-size: 14px;
+  }
+  footer .copyright{
+    font-size: 14px;
+  }
+  footer .footer_wrap{
+    display: block;
+  }
+}
+@media screen and (max-width:770px){
+  footer h2{
+    margin: 0 auto;
+    margin-bottom: var(--padding);
+  }
+  footer form{
+    display: none;
+  }
+  footer .footer_content{
+    font-size: 10px;
+  }
+  footer address.pd{
+    font-size: 10px;
+  }
+  footer .copyright{
+    font-size: 12px;
+  }
+}
+
+
+
 @media screen and (max-width: 1100px) {
   .order .order_cont{
     width: 100%;
@@ -267,8 +411,8 @@ header .bottom_menu.sticky{
     width: 100%;
     height: 450px;
   }
-
 }
+
 @media screen and (max-width: 1000px) {
   .order div div{
     width: 100%;

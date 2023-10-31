@@ -123,7 +123,7 @@ $('.sec2_slides').slick({
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 3000,
-  slideMargin: 15,
+  slideMargin: 5,
   arrows: false
 });
 
@@ -198,8 +198,9 @@ const sec3swiper = new Swiper('.sec3ab', {
 
 
 // button
-let topBtn = document.querySelector('.top_button'),
-    topBtnOffset = document.querySelector('.sec2').offsetTop,
+let topBtn = document.querySelector('.aside'),
+    upGo = document.querySelector('.top_button'),
+    topBtnOffset = document.querySelector('.sec1').offsetTop,
     topScroll = 0;
 
 window.addEventListener('scroll',()=>{
@@ -211,7 +212,7 @@ window.addEventListener('scroll',()=>{
   }
 });
 
-topBtn.addEventListener('click',()=>{
+upGo.addEventListener('click',()=>{
   window.scrollTo({
     left:0,
     top:0,

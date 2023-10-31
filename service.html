@@ -32,11 +32,11 @@
     <div class="top_menu container d-flex justify-content-between align-items-center">
      
         <h1 class="center_logo">
-          <a href="#">로고</a>
+          <a href="index.html">로고</a>
         </h1>
         
         <!-- Search -->
-				<form id="" name="" action="../" method="get" target="" enctype="multipart/form-data" >
+				<form id="" name="" action="index.html" method="get" target="" enctype="multipart/form-data" >
           <input id="banner_action" name="banner_action" value="" type="hidden"/>
           
           <div class="">
@@ -54,24 +54,13 @@
           </div>
         </form>			
         <!-- Search -->
-        
-        
-        <ul class="d-flex icon">
-          <li><img src="img/Sun.svg" alt=""></li>
-          <li>
-            <form action="" id="clbt">
-              <input type="checkbox" id="wifi">  
-              <label for="wifi" class="lab">wifi</label>
-            </form>
-          </li>
-          <li><img src="img/Night.svg" alt=""></li>
-        </ul>
 
         <ul class="d-flex icon">
-          <li><a href=""><img src="img/Login.svg" alt=""></a></li>
-          <li><a href=""><img src="img/Menu.svg" alt=""></a></li>
-          <li><a href=""><img src="img/Talk.svg" alt=""></a></li>
+          <li><a href=""><img src="img/Login.svg" alt="로그인 아이콘"></a></li>
+          <li><a href=""><img src="img/Menu.svg" alt="메뉴 아이콘"></a></li>
+          <li><a href=""><img src="img/Talk.svg" alt="상담원 연결"></a></li>
         </ul>
+
 
       </div>
     </div>
@@ -79,15 +68,15 @@
     <nav class="bottom_menu">
       <div class="bottom_list">
         <ul class="menu_list container d-flex justify-content-center p2">
-          <li><a href="">이용정보</a>
+          <li><a href="info.html">이용정보</a>
             <ul>
-              <li><a data-text="About Us" href="">이용방법</a></li>
-              <li><a data-text="About Us" href="">운영시간</a></li>
-              <li><a data-text="About Us" href="">편의시설</a></li>
-              <li><a data-text="About Us" href="">교통정보</a></li>
+              <li><a href="info.html" class="main_color">이용방법</a></li>
+              <li><a href="guide.html" class="main_color">이용수칙</a></li>
+              <li><a href="service.html" class="main_color">편의시설</a></li>
+              <li><a href="">운영시간</a></li>
             </ul>
           </li>
-          <li><a href="">요금 & 프로모션</a>
+          <li><a href="">요금 &amp; 프로모션</a>
             <ul>
               <li><a href="">이벤트</a></li>
               <li><a href="">이용요금</a></li>
@@ -96,7 +85,7 @@
           </li>
           <li><a href="">어트랙션</a>
             <ul>
-              <li><a href="">어트랙션</a></li>
+              <li><a href="attr.html" class="main_color">어트랙션</a></li>
               <li><a href="">가이드맵</a></li>
               <li><a href="">주의사항</a></li>
             </ul></li>
@@ -286,17 +275,17 @@
 </main>
 
 
-<footer class="d-flex ">
+<footer >
 
-  <div class="footer_wrap d-flex justify-content-center container">
+  <div class="footer_wrap justify-content-center container">
 
-    <a class="footer_logo align-self-center" href="index.html">
-      <img src="img/Logo.png" alt="캐리비안베이 로고">
-    </a>
+    <h2 class="align-self-center">
+      <a href="index.html"></a>
+    </h2>
 
     <div class='footer-link d-flex flex-column '>
      
-      <form class="p2">
+      <form class="p2 d-flex justify-content-between">
         <input id="usermail" name="usermail" placeholder="Enter your email here" autocomplete="off" value="" type="email"/>
         <button><a href="" class="text-uppercase light_g2">Subscribe</a></button>
       </form>
@@ -315,13 +304,14 @@
         
       </address>
 
-      <p class="copyright p1">Copyright &copy; Samsung C&T Corporation. All rights reserved. </p>
+      <p class="copyright p1">Copyright &amp; Samsung &copy; Corporation. All rights reserved. </p>
 
     </div>
 
   </div>
 
 </footer>
+
 
 <script src="js/service.js"></script>
 </body>
