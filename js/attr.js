@@ -40,6 +40,9 @@ window.addEventListener('scroll',()=>{
   }
 });
 
+$('.sec3').imagesLoaded( function() {
+  // images have loaded
+
 
 let sec3marca = $('.sec3 .marca'),
     sec3marcaText = $('.sec3 .marca_text');
@@ -116,6 +119,8 @@ $(window).scroll(function(){
       }
     });
   // sec3 애니메이션 종료
+});
+
 });
 
 function sec3updateImage() {
