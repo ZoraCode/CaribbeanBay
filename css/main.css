@@ -671,11 +671,6 @@ header .bottom_menu.sticky{
   font-size: 30px;
   text-align: end;
 }
-
-.sec8 .news .nplus i:hover{
-  transform: rotate(180deg);
-  transition: .5s;
-}
 .sec8 .news .table tbody i{
   font-size: 10px;
 }
