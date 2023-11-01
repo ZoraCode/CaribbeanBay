@@ -41,7 +41,7 @@ window.addEventListener('scroll',()=>{
 });
 
 
-let sec3marca = $('.sec3 .marca_list'),
+let sec3marca = $('.sec3 .marca'),
     sec3marcaText = $('.sec3 .marca_text');
 let sec3whild = $('.sec3 .whild'),
     sec3whildText = $('.sec3 .whild_text');
@@ -55,7 +55,6 @@ let sec3pool = $('.sec3 .pool'),
 $(window).scroll(function(){
   
   let sec3marcaSCT = $(this).scrollTop();
-  console.log(sec3marcaSCT);
 // marca
   sec3marca.each(function(){
     if($(this).offset().top - 400 <= sec3marcaSCT){

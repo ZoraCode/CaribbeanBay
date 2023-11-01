@@ -276,33 +276,28 @@ header .bottom_menu.sticky{
       padding-top: calc(var(--padding)*3);
     }
     .sec3 .marca{
-      display: flex;
-      gap: 30px;
+      width: 965px;
       margin: 0 auto;
+      display: grid;
+      grid-template-columns: 70fr 10fr 450fr 10fr 70fr 30fr 325fr;
+      grid-template-rows: 10px 10px 90px 175px 125px 10px 10px;
     }
-    .sec3 .marca .marca_list{
-      display: flex;
-      gap: 0 10px;
+    .sec3 .marca_a{
+      grid-column: 1 / 2;
+      grid-row: 1 / 6;
     }
-    .sec3 .marca .marca_text{
-      display: flex;
-      flex-direction:column;
-      padding-top: 90px;
+    .sec3 .marca_b{
+      grid-column: 3 / 4;
+      grid-row: 2 / 7;
     }
-    
-    .sec3 .marca .marca_list .marca_a{
-      transform: translateY(-30px);
-      /* display: block; */
+    .sec3 .marca_c{
+      grid-column: 5 / 6;
+      grid-row: 3 / 8;
     }
-    .sec3 .marca .marca_list .marca_b{
-      /* display: block; */
+    .sec3 .marca_text{
+      grid-column: 7 / 8;
+      grid-row: 4 / 6;
     }
-    .sec3 .marca .marca_list .marca_c{
-      transform: translateY(30px);
-      /* display: block; */
-    }
-    
-    
     .sec3 .whild{
       margin: 0 auto;
       width: 100%;
@@ -467,8 +462,6 @@ header .bottom_menu.sticky{
     display: flex;
     width: 100%;
     height: 400px;
-    /* width: 320px;
-    height: 400px;*/
     margin: 0 auto; 
     transition: .5s;
   
@@ -600,6 +593,11 @@ footer h2 a{
       width: 100%;
     }
   }
+  @media screen and (max-width: 1274px) {
+    .sec3 .marca{
+      width: 100%;
+    }
+  }
   
   @media screen and (max-width: 1240px) {
     .sec3 .spa{width: 100%;}
@@ -611,6 +609,7 @@ footer h2 a{
     }
     .sec3 .pc .tt{
       font-size: 35px;
+      padding-bottom: calc(var(--padding)*3);
     }
     .sec3{
       width: 100%;
@@ -638,41 +637,15 @@ footer h2 a{
     }
   
     .sec3 .marca{
-      display: flex;
-      flex-direction:column;
-      width: 100%;
-      height: auto;
-      box-sizing: border-box;
-      margin: 0 auto;
-      margin-bottom: 90px;
-      justify-content: space-between;
+      padding: 0;
     }
-    .sec3 .marca .marca_list{
-      display: flex;
-      height: 340px;
-      gap: 0 5px;
+    .sec3 .marca_text{
+      grid-column: 7 / 8;
+      grid-row: 3 / 5;
     }
-    .sec3 .marca .marca_text{
-      display: flex;
-      flex-direction:column;
-      padding-top: 10px;
-      margin-bottom: 10px;
-      text-align: center;
+    .sec3 .marca_text h3{
+      font-size: 23px;
     }
-    
-    .sec3 .marca .marca_list .marca_a{
-      align-self: flex-end;
-      display: block;
-    }
-    .sec3 .marca .marca_list .marca_b{
-      align-self: center;
-      display: block;
-    }
-    .sec3 .marca .marca_list .marca_c{
-      align-self: flex-start;
-      display: block;
-    }
-  
     .sec3 .whild{
       width: 100%;
       margin: 0 auto;
@@ -779,12 +752,6 @@ footer h2 a{
     .sec3 .marca{
       width: 100%;
     }
-  }
-  @media screen and (max-width: 950px) {
-    .sec3 .marca .marca_list {width: 100%;}
-    .sec3 .marca .marca_list .marca_a,
-    .sec3 .marca .marca_list .marca_b,
-    .sec3 .marca .marca_list .marca_c{width:100%}
   }
   
   @media screen and (max-width: 480px) {
