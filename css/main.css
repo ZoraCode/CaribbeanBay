@@ -742,11 +742,11 @@ footer form button{
 footer form button a:hover{
   color: var(--sub_color1);
 }
-footer h2{
+footer h1{
   width: 210px;
   margin-bottom: var(--padding);
 }
-footer h2 a{
+footer h1 a{
   background: url(../img/Logo.png)no-repeat;
   text-indent: -1000em;
   display: block;
