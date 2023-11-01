@@ -52,6 +52,12 @@ let sec3pool = $('.sec3 .pool'),
     sec3poolText1 = $('.sec3 .pool_text1'),
     sec3poolText2 = $('.sec3 .pool_text2');
 
+
+    $('.sec3').imagesLoaded( function() {
+      // images have loaded
+
+    
+
 $(window).scroll(function(){
   
   let sec3marcaSCT = $(this).scrollTop();
@@ -134,6 +140,7 @@ function sec3updateImage() {
   }
 }
 
+});
 
 // 480스크립트
 
