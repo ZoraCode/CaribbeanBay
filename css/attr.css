@@ -376,19 +376,19 @@ header .bottom_menu.sticky{
       display: none;
     }
     .sec3_illust_1{
-      background-image: url(/img/Sub/Sec3_Scroll_A.png);
+      background-image: url(../img/Sub/Sec3_Scroll_A.png);
       height: 850px;
     }
     .sec3_illust_2{
-      background-image: url(/img/Sub/Sec3_Scroll_B.png);
+      background-image: url(../img/Sub/Sec3_Scroll_B.png);
       height: 850px;
     }
     .sec3_illust_3{
-      background-image: url(/img/Sub/Sec3_Scroll_C.png);
+      background-image: url(../img/Sub/Sec3_Scroll_C.png);
       height: 850px;
     }
     .sec3_illust_4{
-      background-image: url(/img/Sub/Sec3_Scroll_D.png);
+      background-image: url(../img/Sub/Sec3_Scroll_D.png);
       height: 850px;
     }
     .content {
