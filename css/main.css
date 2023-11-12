@@ -653,6 +653,8 @@ header .bottom_menu.sticky{
 .sec8 .today .nbtn{
   background: var(--sub_color2);
   color: var(--white);
+  width: 160px;
+  margin: 0 auto;
 }
 .sec8 .today .nbtn:hover{
   background: var(--sub_color3);
@@ -897,11 +899,10 @@ footer h1 a{
     white-space: nowrap;
   }
   .sec8 .today .nbtn{
-    width: 275px;
+    width: 160px;
     display: block;
     margin: 0 auto;
   }
-
   footer form button{
     width: 120px;
   }
