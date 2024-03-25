@@ -226,9 +226,12 @@ header .bottom_menu.sticky{
     }
     .sec3 h3{
       color: var(--sub_color2);
+      font-size: 40px;
     }
     .sec3 p{
       color: var(--light_g2);
+      font-size: 18px;
+      letter-spacing: -2px;
     }
     /* img 효과 */
     *[class*="op3"]{

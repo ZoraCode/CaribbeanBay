@@ -7,6 +7,12 @@
 * {
   font-family: "Spoqa Han Sans Neo", "sans-serif";
 }
+a{
+  white-space: nowrap !important;
+}
+p{
+  letter-spacing: -2px;
+}
 
 h1,h2,h3,h4,h5,h6,p,span,textarea,input,label,a,select,option,address{
   font-family: "Spoqa Han Sans Neo", "sans-serif";
@@ -217,4 +223,27 @@ h1,h2,h3,h4,h5,h6,p,span,textarea,input,label,a,select,option,address{
  .move [class*="op"]{
   transform:none;
   opacity: 1;
+}
+
+header .bottom_menu .menu_list a:first-child{
+  font-weight: bold;
+}
+
+header .top_menu .icon a{
+  font-size: 14px;
+  color: #696969;
+}
+header .top_menu .icon li a:after{
+  content: '\007c';
+  position: relative;
+  right: -5px;
+  color: #ccc;
+  font-weight: 100;
+  font-size: 14px;
+}
+header .top_menu .icon li a:hover{
+  color: #414141;
+}
+header .top_menu .icon li a.this::after{
+  display: none;
 }

@@ -275,7 +275,9 @@ header .bottom_menu.sticky{
 }
 .convenient button a{
   color: var(--white);
-
+  padding: 10px 10px;
+  position: relative;
+  top:-2px;
 }
 
 

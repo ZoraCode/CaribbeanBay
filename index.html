@@ -64,9 +64,12 @@
         <!-- Search -->
 
         <ul class="d-flex icon">
-          <li><a href=""><img src="img/Login.svg" alt="로그인 아이콘"></a></li>
+          <li><a href="">로그인</a></li>
+          <li><a href="">회원가입</a></li>
+          <li><a href="" class="this">아이디/비밀번호 찾기</a></li>
+          <!-- <li><a href=""><img src="img/Login.svg" alt="로그인 아이콘"></a></li>
           <li><a href=""><img src="img/Menu.svg" alt="메뉴 아이콘"></a></li>
-          <li><a href=""><img src="img/Talk.svg" alt="상담원 연결"></a></li>
+          <li><a href=""><img src="img/Talk.svg" alt="상담원 연결"></a></li> -->
         </ul>
 
 
@@ -169,14 +172,16 @@
             </div>
           </div>
         </div>
-      </div>
+          </div> <!-- swiper-wrapper -->
 
       <div class="sec1_controls">
         <div class="sec1_prev"><i class="fa-solid fa-angle-left"></i></div>
           <div class="swiper-scrollbar"></div>
         <div class="sec1_next"><i class="fa-solid fa-angle-right"></i></div>
       </div>
-    </div>
+
+
+        </div><!-- hei sec1_video_slide -->
   
     <div class="text-slider Slide_Choice">
 
@@ -284,7 +289,6 @@
       <div class="container title">
         <p class="mt light_g2">이렇게 놀아야 #캐비지!</p>
         <h2 class="tt light_g1 sm_pd">어트랙션 한 <span class="main_color">눈</span>에 보기<span class="mt"> 👀</span></h2>
-        <p class="stfont position-relative">A glance at the attraction</p>
       </div>
 
       <div class="blist ">
@@ -732,3 +736,102 @@
 </body>
 
 </html>
+
+
+
+<section class="sec1">
+
+	<!-- Slider main container -->
+	<div class="swiper mn_three">
+		<!-- Additional required wrapper -->
+		<div class="swiper-wrapper">
+			
+		<!-- Slides -->
+			<div class="swiper-slide">
+				<div class="sld-img">
+					<img class="ima" src="/images/main/TESTMAIN.png" alt="">
+				</div>
+
+				<div class="title">
+					<h2>JL 투자그룹 필란트로피 클럽 가입 <br>
+					후원을 넘어, 가치를 실현?</h2>
+					<div class="line"></div>
+					<h3>기아대책 후원자 리딩그룹, 1억원 이상을 기부한 기업</h3>
+				</div>
+			</div>
+
+			
+			<div class="swiper-slide">
+				<div class="sld-img">
+					<img  class="ima" src="/images/main/TESTMAIN.png" alt="">
+				</div>
+
+				<div class="title">
+					<h2>JL 투자그룹 필란트로피 클럽 가입 <br>
+					후원을 넘어, 가치를 실현?</h2>
+					<div class="line"></div>
+					<h3>기아대책 후원자 리딩그룹, 1억원 이상을 기부한 기업</h3>
+				</div>
+			</div>
+
+
+			<div class="swiper-slide">
+				<div class="sld-img">
+					<img  class="ima" src="/images/main/TESTMAIN.png" alt="">
+				</div>
+
+				<div class="title">
+					<h2>JL 투자그룹 필란트로피 클럽 가입 <br>
+					후원을 넘어, 가치를 실현?</h2>
+					<div class="line"></div>
+					<h3>기아대책 후원자 리딩그룹, 1억원 이상을 기부한 기업</h3>
+				</div>
+			</div>
+
+
+
+		</div>
+		<!-- If we need pagination -->
+		<div class="swiper-pagination"></div>
+
+		<!-- If we need navigation buttons -->
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div>
+
+		<!-- If we need scrollbar -->
+		<div class="swiper-scrollbar"></div>
+	</div>
+
+</section>
+
+
+.sec1{
+  width: 100%;
+  height: 100%; 
+  overflow: hidden;
+  color: var(--white);
+}
+.sec1 .swiper-slide{
+  position: relative;
+}
+.sld-img{
+  position: relative;
+  position: absolute;
+}
+.sec1 .sld-img .ima{
+  width: 100%;
+  background-size:cover;
+}
+.sec1 .mn_three{
+  position: relative;
+  overflow: hidden;
+  height:95vh;
+}
+.swiper-slide{
+  overflow: hidden;
+}
+.sec1 .title{
+  position: absolute;
+  left: 10%;
+  top: 300px;
+}

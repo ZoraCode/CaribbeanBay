@@ -213,9 +213,8 @@ header .bottom_menu.sticky{
     margin-bottom: calc(var(--padding)*5);
   }
   .line i{
-    width: 5%;
     font-size: calc(var(--font_size)*2);
-    color: #a07f65;
+    color: #7e7269;
   }
   .line .swiper-slide{
     border-radius: 5px;

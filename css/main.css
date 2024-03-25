@@ -28,8 +28,8 @@ header .top_menu .open_search{
   width: 600px;
   height: 45px;
   border-radius: 5px;
-  border: 1.5px solid rgba(173, 165, 165, 0.7);
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.40) 4.29%, rgba(255, 255, 255, 0.40) 95.6%), #FFF;
+  border: 1.5px solid rgba(173, 165, 165, 0.5);
+  
   background-blend-mode: soft-light, normal;
   box-shadow: 5px 5px 5px 0px rgba(203, 206, 214, 0.2) inset, -9px -9px 16px 0px rgba(250, 251, 255, 0.30) inset;
 }
@@ -143,6 +143,10 @@ header .bottom_menu.sticky{
 }
 /* body */
 
+h2{
+  letter-spacing: -3px;
+}
+
 /* sec1 */
 
 .sec1 {
@@ -200,7 +204,6 @@ header .bottom_menu.sticky{
   font-family: 'RixYeoljeongdo_Regular';
   text-transform: uppercase;
   white-space: nowrap;
-  text-shadow: 0px 0px 15px rgba(246, 255, 193, 0.35);
   font-size: 80px; 
   -webkit-text-stroke: .5px #fbffca;
   line-height: 100px;
@@ -461,11 +464,9 @@ header .bottom_menu.sticky{
 .sec5 .Sec5_right{
   width: 45%;
 }
-.sec5 .Sec5_left .event{ 
+.sec5 .Sec5_left .event{
   background-color: var(--sub_color2);
   color: var(--white);
-  width: 270px;
-
 }
 .sec5 .Sec5_left .event:hover{
   background-color: var(--sub_color3);
@@ -576,12 +577,12 @@ header .bottom_menu.sticky{
   cursor: pointer;
 }
 .sec6 .food_list .box:hover:nth-child(odd){
-  opacity: .93;
-  transform: rotate(-2deg);
+  opacity: .95;
+  transform: rotate(-1deg);
 }
 .sec6 .food_list .box:hover:nth-child(2n){
-  opacity: .93;
-  transform: rotate(2deg);
+  opacity: .95;
+  transform: rotate(1deg);
 }
 .sec6 .food_list .box p{
   position: absolute;
